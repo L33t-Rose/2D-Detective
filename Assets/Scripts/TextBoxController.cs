@@ -8,10 +8,12 @@ public class TextBoxController : MonoBehaviour
     public Text speakerText;
     public Text dialogueText;
 
-    public (string, string) fuck;
+    public (string, string) fuck;//
 
 
     (string speaker, string dialogue)[] test;
+    (string speaker, string dialogue)[] Sequence1;
+    (string speaker, string dialogue)[] currentSequence;
     (string speaker, string dialogue) current;
     int currentIndex = 0;
 
@@ -33,15 +35,23 @@ public class TextBoxController : MonoBehaviour
             ("Mia","It's... a clock"),
             ("???","A clock?"),
             ("Mia","Yeah, it's made to look like that statue, \"The Thinker.\"And it tells you the time! I thought you might like it. You always liked toys"),
-            ("???","Hey! I'm not a little girl anymore, Sis!"),
+            ("???","Hey! I'm not a little girl anymore, Sis!"), 
             ("Mia","Now, now. YOu know I'm only teasing. Ah, I should probably teel you, the clock isn't talking right now."),
             ("???","Huh? It's not working? That's lame!"),
             ("Mia","I had to take the clockwork out. Sorry, I put some papers inside it instead."),
             ("???","Papers? Is that the evidence, then? Hmmmm, well... there's a possibility that it might tour out that way,yes.")
 
         };
+        Sequence1 = new (string speaker, string dialogue)[]
+        {
+            ("Joseph", "My name is Joseph Wilson, I am a homicide detective at the Wright Police Department. I have been working for 18 years."),
+            ("Joseph", "Like the fish in the sea, detectives come and go. But I remained and I will soon be the Chief of Police. "),
+            ("Joseph", "There are many reasons that I made it this far. But there’s one thing that helped me throughout the years."),
+        };
 
-        current = test[0];
+        currentSequence = Sequence1;
+
+        current = currentSequence[0];
 
         showCurrent();
 
@@ -61,11 +71,11 @@ public class TextBoxController : MonoBehaviour
         print($"Current index before {currentIndex}");
         currentIndex += 1;
         print($"Current index after {currentIndex}");
-        if (currentIndex >= test.Length)
+        if (currentIndex >= currentSequence.Length)
         {
             return;
         }
-        current = test[currentIndex];
+        current = currentSequence[currentIndex];
         showCurrent();
     }
 
