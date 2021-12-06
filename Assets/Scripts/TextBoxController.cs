@@ -7,6 +7,7 @@ public class TextBoxController : MonoBehaviour
 {
     public Text speakerText;
     public Text dialogueText;
+    public GameObject office;  
 
     public (string, string) fuck;//
 
@@ -47,8 +48,16 @@ public class TextBoxController : MonoBehaviour
             ("Joseph", "My name is Joseph Wilson, I am a homicide detective at the Wright Police Department. I have been working for 18 years."),
             ("Joseph", "Like the fish in the sea, detectives come and go. But I remained and I will soon be the Chief of Police. "),
             ("Joseph", "There are many reasons that I made it this far. But there’s one thing that helped me throughout the years."),
+            ("Joseph", "I have 2D vision."),
+            ("Joseph", "In a way, it’s a disability."),
+            ("Joseph", "In a way, it’s superhuman vision."),
+            ("Joseph", "I have been able to see things others can’t. Details that others missed."),
+            ("???", "Hey detective Joseph.")
+
+
         };
 
+        office.transform.localScale= new Vector3(0, 0, 1);
         currentSequence = Sequence1;
 
         current = currentSequence[0];
@@ -70,6 +79,10 @@ public class TextBoxController : MonoBehaviour
         print("clicked");
         print($"Current index before {currentIndex}");
         currentIndex += 1;
+        if (currentIndex == 3)
+        {
+            office.transform.localScale = new Vector3(13.31127f, 10.00116f, 1);
+        }
         print($"Current index after {currentIndex}");
         if (currentIndex >= currentSequence.Length)
         {
