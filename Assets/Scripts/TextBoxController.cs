@@ -76,7 +76,19 @@ public class TextBoxController : MonoBehaviour
             ("Joseph", "Great, another Tuesday."),
             ("Thomas", "The murder took place 2 days ago. The victim’s name is Katie Miller. Female, 23 years old. An office worker."),
             ("Thomas", "She was stabbed in the chest, cause of death was loss of blood."),
-            ("Thomas", "Here’s the autopsy report.")
+            ("Thomas", "Here’s the autopsy report."),
+            ("Joseph", "Who do we have?"),
+            ("Thomas", "We have 3 suspects, Jack Willow, Andreas Grace, and Eliot Bernandez. They are Katie’s coworkers and they were staying after work that day for a project."),
+            ("Joseph", "Do we have the weapon?"),
+            ("Thomas", "We do have the knife. It was left on the victim’s body."),
+            ("Joseph", "Do we have any reading on the knife? Any labs done?"),
+            ("Thomas", "Way ahead of you. The blood on the knife belonged to the victim and we didn’t find blood samples that belonged to someone else."),
+            ("Thomas", "The suspect left their fingerprints on it, it was a match with Jack Willow."),
+            ("Joseph", "Seems like an open case."),
+            ("Thomas", "The knife also belonged to Jack."),
+            ("Joseph", "(Yeah no, either this is really easy or he is one of the generic obvious suspect)"),
+            ("Joseph", "Alright, I guess we should do more investigation before Jack goes to court."),
+            ("Thomas", "Already have an idea aye?")
 
 
 
@@ -118,6 +130,10 @@ public class TextBoxController : MonoBehaviour
         else if(currentIndex == 22)
         {
             anim.SetBool("smugPartner", false);
+        }
+        else if(currentIndex==38)
+        {
+            anim.SetBool("smugPartner", true);
         }
         print($"Current index after {currentIndex}");
         if (currentIndex >= currentSequence.Length)
