@@ -7,7 +7,9 @@ public class TextBoxController : MonoBehaviour
 {
     public Text speakerText;
     public Text dialogueText;
-    public GameObject office;  
+    public GameObject office;
+    public GameObject partner;
+    public Animator anim;
 
     public (string, string) fuck;//
 
@@ -52,12 +54,38 @@ public class TextBoxController : MonoBehaviour
             ("Joseph", "In a way, it’s a disability."),
             ("Joseph", "In a way, it’s superhuman vision."),
             ("Joseph", "I have been able to see things others can’t. Details that others missed."),
-            ("???", "Hey detective Joseph.")
+            ("Joseph", "I have solved the unsolvable and I have possibled the impossible."),
+            ("Joseph", "Ok that one was a little weird."),
+            ("???", "Hey detective Joseph."),
+            ("Joseph", "?"),
+            ("???", "How's it going?"),
+            ("Joseph", "This is my partner in crime."),
+            ("Joseph", "Get it? Partner? In Crime?"),
+            ("Joseph", "His name is Thomas Cottonboot."),
+            ("Joseph", "He has been with me for a while."),
+            ("Joseph", "He wasn’t my first partner but I have worked with him for a couple of years."),
+            ("Joseph", "What is it Thomas?"),
+            ("Thomas", "There’s no time to sleep."),
+            ("Thomas", "Am I still in 2D for you?"),
+            ("Joseph", "Yes, everyday, for the 39th year now."),
+            ("Joseph", "If I didn’t know, I would’ve thought the game developers were just bad at art."),
+            ("Thomas", "What?"),
+            ("Joseph", "What?"),
+            ("Joseph", "Anyway, What is it?"),
+            ("Thomas", "A new case. The chief assigned you to do it specifically."),
+            ("Joseph", "Great, another Tuesday."),
+            ("Thomas", "The murder took place 2 days ago. The victim’s name is Katie Miller. Female, 23 years old. An office worker."),
+            ("Thomas", "She was stabbed in the chest, cause of death was loss of blood."),
+            ("Thomas", "Here’s the autopsy report.")
+
 
 
         };
 
         office.transform.localScale= new Vector3(0, 0, 1);
+        partner.transform.localScale = new Vector3(0, 0, 1);
+        anim.SetBool("smugPartner", true);
+
         currentSequence = Sequence1;
 
         current = currentSequence[0];
@@ -82,6 +110,14 @@ public class TextBoxController : MonoBehaviour
         if (currentIndex == 3)
         {
             office.transform.localScale = new Vector3(13.31127f, 10.00116f, 1);
+        }
+        else if(currentIndex == 11 )
+        {
+            partner.transform.localScale = new Vector3(7, 7, 1);
+        }
+        else if(currentIndex == 22)
+        {
+            anim.SetBool("smugPartner", false);
         }
         print($"Current index after {currentIndex}");
         if (currentIndex >= currentSequence.Length)
