@@ -7,12 +7,9 @@ public class TextBoxController : MonoBehaviour
 {
     public Text speakerText;
     public Text dialogueText;
-    public GameObject office;
-    public GameObject partner;
+    public Canvas canvas;
+
     public Animator anim;
-
-    public (string, string) fuck;//
-
 
     (string speaker, string dialogue)[] test;
     (string speaker, string dialogue)[] Sequence1;
@@ -23,89 +20,66 @@ public class TextBoxController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        test = new (string speaker, string dialogue)[]{
-            ("Cellular","Brrring... Briiiing"),
-            ("Cellular","*beep*"),
-            ("???","Hello? This is Maya."),
-            ("Mia","Hey Maya, it's me."),
-            ("???","Mia! What's up? You haven't called in a while."),
-            ("Mia","Sorry, I've been so busy. How you been."),
-            ("???","Well, LONELY. And it's all YOUR fault. Nah, I'm just teasing. I've been great! I'm finally getting used to having my own place."),
-            ("Mia","That's good to hear. Actually, I'm calling because I have a favor to ask."),
-            ("???","I know, I know. YOu want me to hold evidence for you?"),
-            ("Mia","Sharp as always! There's a lot of vuzz about the upcoming trial... I just don't feel safe keeping the ecivece here."),
-            ("???","I gotcha. So, what is it this time?"),
-            ("Mia","It's... a clock"),
-            ("???","A clock?"),
-            ("Mia","Yeah, it's made to look like that statue, \"The Thinker.\"And it tells you the time! I thought you might like it. You always liked toys"),
-            ("???","Hey! I'm not a little girl anymore, Sis!"), 
-            ("Mia","Now, now. YOu know I'm only teasing. Ah, I should probably teel you, the clock isn't talking right now."),
-            ("???","Huh? It's not working? That's lame!"),
-            ("Mia","I had to take the clockwork out. Sorry, I put some papers inside it instead."),
-            ("???","Papers? Is that the evidence, then? Hmmmm, well... there's a possibility that it might tour out that way,yes.")
-
-        };
-        Sequence1 = new (string speaker, string dialogue)[]
-        {
-            ("Joseph", "My name is Joseph Wilson, I am a homicide detective at the Wright Police Department. I have been working for 18 years."),
-            ("Joseph", "Like the fish in the sea, detectives come and go. But I remained and I will soon be the Chief of Police. "),
-            ("Joseph", "There are many reasons that I made it this far. But there’s one thing that helped me throughout the years."),
-            ("Joseph", "I have 2D vision."),
-            ("Joseph", "In a way, it’s a disability."),
-            ("Joseph", "In a way, it’s superhuman vision."),
-            ("Joseph", "I have been able to see things others can’t. Details that others missed."),
-            ("Joseph", "I have solved the unsolvable and I have possibled the impossible."),
-            ("Joseph", "Ok that one was a little weird."),
-            ("???", "Hey detective Joseph."),
-            ("Joseph", "?"),
-            ("???", "How's it going?"),
-            ("Joseph", "This is my partner in crime."),
-            ("Joseph", "Get it? Partner? In Crime?"),
-            ("Joseph", "His name is Thomas Cottonboot."),
-            ("Joseph", "He has been with me for a while."),
-            ("Joseph", "He wasn’t my first partner but I have worked with him for a couple of years."),
-            ("Joseph", "What is it Thomas?"),
-            ("Thomas", "There’s no time to sleep."),
-            ("Thomas", "Am I still in 2D for you?"),
-            ("Joseph", "Yes, everyday, for the 39th year now."),
-            ("Joseph", "If I didn’t know, I would’ve thought the game developers were just bad at art."),
-            ("Thomas", "What?"),
-            ("Joseph", "What?"),
-            ("Joseph", "Anyway, What is it?"),
-            ("Thomas", "A new case. The chief assigned you to do it specifically."),
-            ("Joseph", "Great, another Tuesday."),
-            ("Thomas", "The murder took place 2 days ago. The victim’s name is Katie Miller. Female, 23 years old. An office worker."),
-            ("Thomas", "She was stabbed in the chest, cause of death was loss of blood."),
-            ("Thomas", "Here’s the autopsy report."),
-            ("Joseph", "Who do we have?"),
-            ("Thomas", "We have 3 suspects, Jack Willow, Andreas Grace, and Eliot Bernandez. They are Katie’s coworkers and they were staying after work that day for a project."),
-            ("Joseph", "Do we have the weapon?"),
-            ("Thomas", "We do have the knife. It was left on the victim’s body."),
-            ("Joseph", "Do we have any reading on the knife? Any labs done?"),
-            ("Thomas", "Way ahead of you. The blood on the knife belonged to the victim and we didn’t find blood samples that belonged to someone else."),
-            ("Thomas", "The suspect left their fingerprints on it, it was a match with Jack Willow."),
-            ("Joseph", "Seems like an open case."),
-            ("Thomas", "The knife also belonged to Jack."),
-            ("Joseph", "(Yeah no, either this is really easy or he is one of the generic obvious suspect)"),
-            ("Joseph", "Alright, I guess we should do more investigation before Jack goes to court."),
-            ("Thomas", "Already have an idea aye?")
-
-
-
-        };
-
-        office.transform.localScale= new Vector3(0, 0, 1);
-        partner.transform.localScale = new Vector3(0, 0, 1);
+        Debug.Log(GameData.Sequence);
         anim.SetBool("smugPartner", true);
-
-        currentSequence = Sequence1;
-
+        currentSequence = GameData.Sequence[0];
         current = currentSequence[0];
+        if (isCurrentACommand())
+        {
+            useCommand(current);
+        }
+        else
+        {
+            showCurrent();
+        }
+    }
 
-        showCurrent();
+    bool isCurrentACommand()
+    {
+        return current.speaker.StartsWith("_");
+    }
 
-        Debug.Log(speakerText.name);
-        Debug.Log(dialogueText.name);
+    void useCommand((string speaker, string dialogue) com)
+    {
+        bool autoNext = false;
+        switch (com.speaker)
+        {
+            case "_hideBG":
+                print("hiding bg");
+                autoNext = true;
+                canvas.SendMessage("hideBackground");
+                break;
+            case "_showBG":
+                print("showing bg");
+                autoNext = true;
+                canvas.SendMessage("showBackground");
+                break;
+            case "_hideCharacter":
+                print("hiding character");
+                autoNext = true;
+                canvas.SendMessage("hideCharacter");
+                break;
+            case "_showCharacter":
+                print("hiding character");
+                autoNext = true;
+                canvas.SendMessage("showCharacter");
+                break;
+            case "_setFace":
+                print("hiding character");
+                autoNext = true;
+                canvas.SendMessage("changeFace",com.dialogue);
+                break;
+            case "_obtainEv":
+                print("hiding char");
+                autoNext = false;
+                canvas.SendMessage("obtainEvidence",com.dialogue);
+                break;
+        }
+        if (autoNext)
+        {
+            getNextText();
+            return;
+        }
     }
 
     void showCurrent()
@@ -114,48 +88,19 @@ public class TextBoxController : MonoBehaviour
         dialogueText.text = current.dialogue;
     }
 
-    void getNextCurrent()
+    void getNextText()
     {
-        print("clicked");
-        print($"Current index before {currentIndex}");
         currentIndex += 1;
-        if (currentIndex == 3)
+        if (currentIndex <= currentSequence.Length-1)
         {
-            office.transform.localScale = new Vector3(13.31127f, 10.00116f, 1);
-        }
-        else if(currentIndex == 11 )
-        {
-            partner.transform.localScale = new Vector3(7, 7, 1);
-        }
-        else if(currentIndex == 22)
-        {
-            anim.SetBool("smugPartner", false);
-        }
-        else if(currentIndex==38)
-        {
-            anim.SetBool("smugPartner", true);
-        }
-        print($"Current index after {currentIndex}");
-        if (currentIndex >= currentSequence.Length)
-        {
-            return;
-        }
-        current = currentSequence[currentIndex];
-        showCurrent();
+            current = currentSequence[currentIndex];
+            if (isCurrentACommand())
+            {
+                useCommand(current);
+                return;
+            }
+            showCurrent();
+        } 
     }
-
-    // Update is called once per frame
-    //void Update()
-    //{
-    //    time -= Time.deltaTime;
-    //    if (time <= 0)
-    //    {
-    //        getNextCurrent();
-    //        time = 5.0f;
-    //    }
-       
-
-    //}
-
 
 }
