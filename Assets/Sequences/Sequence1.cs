@@ -24,6 +24,7 @@ public class Sequence1 : MonoBehaviour
             new (string speaker, string dialogue)[]{
                 ("_hideCharacter",""),
                 ("_hideBG",""),
+                ("_setFace","smug"),
                 ("Joseph", "My name is Joseph Wilson, I am a homicide detective at the Wright Police Department. I have been working for 18 years."),
                 ("Joseph", "Like the fish in the sea, detectives come and go. But I remained and I will soon be the Chief of Police. "),
                 ("Joseph", "There are many reasons that I made it this far. But there’s one thing that helped me throughout the years."),
@@ -48,7 +49,7 @@ public class Sequence1 : MonoBehaviour
                 ("Thomas", "Am I still in 2D for you?"),
                 ("Joseph", "Yes, everyday, for the 39th year now."),
                 ("Joseph", "If I didn’t know, I would’ve thought the game developers were just bad at art."),
-                ("_setFace","smug"),
+                ("_setFace","normal"),
                 ("Thomas", "What?"),
                 ("Joseph", "What?"),
                 ("Joseph", "Anyway, What is it?"),
