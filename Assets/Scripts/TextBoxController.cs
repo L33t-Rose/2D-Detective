@@ -78,7 +78,8 @@ public class TextBoxController : MonoBehaviour
                 canvas.SendMessage("hideObtainedEvidence");
                 break;
             case "_nextScene":
-                cavas.SendMessage("loadNextScene";
+                canvas.SendMessage("loadNextScene");
+                break;
                 
               
 

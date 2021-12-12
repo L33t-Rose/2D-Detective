@@ -5,16 +5,19 @@ using UnityEngine;
 public class SceneObjectController : MonoBehaviour
 {
     // Start is called before the first frame update
-    Vector3 position;
+    Vector3 original_position;
     void Start()
     {
-        position = transform.position;
+        original_position = transform.position;
+        print("This is the original pos"+original_position);
     }
 
     // Update is called once per frame
     void show() {
         print("called show");
-        this.transform.position = position;
+        print(original_position);
+        transform.position = original_position;
+        print(this.transform.position);
     }
 
     void hide() {
