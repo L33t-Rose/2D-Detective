@@ -765,6 +765,7 @@ GameObject:
   m_Component:
   - component: {fileID: 479346917}
   - component: {fileID: 479346916}
+  - component: {fileID: 479346918}
   m_Layer: 0
   m_Name: office
   m_TagString: Untagged
@@ -830,12 +831,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479346915}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.029, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 13.31127, y: 10.00116, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &479346918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479346915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd27e4e835fbb141b2b3e81225775a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &483641012
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,6 +860,7 @@ GameObject:
   - component: {fileID: 483641014}
   - component: {fileID: 483641013}
   - component: {fileID: 483641015}
+  - component: {fileID: 483641016}
   m_Layer: 0
   m_Name: cropped partner
   m_TagString: Untagged
@@ -937,6 +951,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &483641016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483641012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd27e4e835fbb141b2b3e81225775a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &504282494
 GameObject:
   m_ObjectHideFlags: 0
