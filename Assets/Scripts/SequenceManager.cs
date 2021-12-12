@@ -29,6 +29,11 @@ public class SequenceManager : MonoBehaviour
         }
     }
 
+    void hideObtainedEvidence()
+    {
+        EVIDENCE_UI.SendMessage("hide");
+    }
+
     void hideBackground()
     {
         backGround.transform.localScale = new Vector3(0, 0, 1);

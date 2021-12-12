@@ -58,6 +58,7 @@ public class Sequence1 : MonoBehaviour
                 ("Thomas", "She was stabbed in the chest, cause of death was loss of blood."),
                 ("Thomas", "Here’s the autopsy report."),
                 ("_obtainEv", "0"),
+                ("_hideObtainedEnv",""),
                 ("Joseph", "Who do we have?"),
                 ("Thomas", "We have 3 suspects, Jack Willow, Andreas Grace, and Eliot Bernandez. They are Katie’s coworkers and they were staying after work that day for a project."),
                 ("Joseph", "Do we have the weapon?"),

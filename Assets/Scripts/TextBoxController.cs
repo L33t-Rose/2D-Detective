@@ -71,9 +71,13 @@ public class TextBoxController : MonoBehaviour
                 break;
             case "_obtainEv":
                 print("hiding char");
-                autoNext = false;
                 canvas.SendMessage("obtainEvidence",com.dialogue);
                 break;
+            case "_hideObtainedEnv":
+                autoNext = true;
+                canvas.SendMessage("hideObtainedEvidence");
+                break;
+
         }
         if (autoNext)
         {
