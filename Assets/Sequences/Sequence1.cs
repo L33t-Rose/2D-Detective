@@ -17,7 +17,7 @@ public class Sequence1 : MonoBehaviour
     {
         GameData.EVIDENCE_DATA = new(string name, string desc)[]
         {
-            ("Autopsy Report","Name: Katie Miller\nCause Of Death:Knife wound to the chest, loss of blood.")
+            ("Autopsy Report","Name: Katie Miller\nCause Of Death:\nKnife wound to the chest, loss of blood.")
         };
         GameData.Sequence = new (string speaker, string dialogue)[][]
         {
@@ -54,7 +54,7 @@ public class Sequence1 : MonoBehaviour
                 ("Joseph", "Anyway, What is it?"),
                 ("Thomas", "A new case. The chief assigned you to do it specifically."),
                 ("Joseph", "Great, another Tuesday."),
-                ("Thomas", "The murder took place 2 days ago. The victim’s name is Katie Miller. Female, 23 years old. An office worker."),
+                ("Thomas", "The murder took place 2 days ago. September 7. The victim’s name is Katie Miller. Female, 23 years old. An office worker."),
                 ("Thomas", "She was stabbed in the chest, cause of death was loss of blood."),
                 ("Thomas", "Here’s the autopsy report."),
                 ("_obtainEv", "0"),
@@ -73,6 +73,7 @@ public class Sequence1 : MonoBehaviour
                 ("Thomas", "Already have an idea aye?"),
             }
         };
+
         print("Initialized");
     }
 
