@@ -59,7 +59,32 @@ public class SequenceManager : MonoBehaviour
 
     void changeFace(string state)
     {
-        anim.SetBool("smugPartner", false);
+        //0: Normal
+        //1: Smug
+        //2: Mad
+        //3: Judgy
+        //4: Sad
+        int anim_state = 0;
+        switch (state)
+        {
+            case "normal":
+                anim_state = 0;
+                break;
+            case "smug":
+                anim_state = 1;
+                break;
+            case "mad":
+                anim_state = 2;
+                break;
+            case "judgy":
+                anim_state = 3;
+                break;
+            case "sad":
+                anim_state = 4;
+                break;
+        }
+        anim.SetInteger("state", anim_state);
+
     }
 
     void loadNextScene(string nextScene)
