@@ -61,4 +61,9 @@ public class SequenceManager : MonoBehaviour
     {
         anim.SetBool("smugPartner", false);
     }
+
+    void loadNextScene(string nextScene)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
+    }
 }
