@@ -17,7 +17,7 @@ public class Sequence1 : MonoBehaviour
     {
         GameData.EVIDENCE_DATA = new(string name, string desc)[]
         {
-            ("Autopsy Report","Name: Deez Nuts\nCause Of Death:Deez Nuts")
+            ("Autopsy Report","Name: Katie Miller\nCause Of Death:Knife wound to the chest, loss of blood.")
         };
         GameData.Sequence = new (string speaker, string dialogue)[][]
         {
