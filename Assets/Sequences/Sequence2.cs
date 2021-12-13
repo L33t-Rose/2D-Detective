@@ -100,7 +100,22 @@ public class Sequence2 : MonoBehaviour
             new (string speaker, string dialogue)[] //dialogue for "Relation with coworkers"
             { 
                 ("Joseph", "How would you describe your coworkers?"),
-                ("Jack", "I ")
+                ("Jack", "I don't particularly like them, and I know why you guys arrested me."),
+                ("Jack", "Katie and I have been enemies, she thinks I am slacking and I am not doing work."),
+                ("Jack", "I hate those people who thinks you don't do anything when they can't see it."),
+                ("Jack", "You guys probably think 'He has history with Katie' so I have motive."),
+                ("Jack", "But you guys have no concrete evidence that it was me."),
+                ("Joseph", "(He doesn't think we have concrete evidence...)"),
+                ("Joseph", "(Is he stupid?)"),
+                ("Joseph", "Alright, what about others?"),
+                ("Joseph", "What do you think about Eliot?"),
+                ("Jack", "Eliot?"),
+                ("_setFace", "judgy"),
+                ("Jack", "Biggest simp I've seen."),
+                ("Jack", "He always has some brown on his nose. ")
+
+
+
             }
 
         };

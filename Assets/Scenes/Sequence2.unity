@@ -892,10 +892,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7388875091643873856, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7388875091695492842, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -34173.75
+      value: -35094.92
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7388875091441500364, guid: 6eb6c0e321b094345b4e83c904ad2bbf, type: 3}
