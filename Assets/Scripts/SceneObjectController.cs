@@ -21,7 +21,7 @@ public class SceneObjectController : MonoBehaviour
     }
 
     void hide() {
-        print("called hide");
+        print("called hide"+this.name);
 
         var tmpPosition = this.transform.position;
         tmpPosition.y = -10.5f;

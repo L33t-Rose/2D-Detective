@@ -20,10 +20,30 @@ public class TextBoxController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(GameData.Sequence);
-        anim.SetBool("smugPartner", true);
-        currentSequence = GameData.Sequence[0];
-        current = currentSequence[0];
+        //Debug.Log(GameData.Sequence);
+        //anim.SetBool("smugPartner", true);
+        //currentSequence = GameData.Sequence[0];
+        //current = currentSequence[0];
+        //if (isCurrentACommand())
+        //{
+        //    useCommand(current);
+        //}
+        //else
+        //{
+        //    showCurrent();
+        //}
+    }
+
+    bool isCurrentACommand()
+    {
+        return current.speaker.StartsWith("_");
+    }
+
+
+    void LoadDialogue(int index)
+    {
+        currentSequence = GameData.Sequence[index];
+        current = currentSequence[index];
         if (isCurrentACommand())
         {
             useCommand(current);
@@ -32,11 +52,6 @@ public class TextBoxController : MonoBehaviour
         {
             showCurrent();
         }
-    }
-
-    bool isCurrentACommand()
-    {
-        return current.speaker.StartsWith("_");
     }
 
     void useCommand((string speaker, string dialogue) com)

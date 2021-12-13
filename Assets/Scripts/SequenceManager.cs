@@ -11,12 +11,6 @@ public class SequenceManager : MonoBehaviour
     //We want a system that allows us to control the elements in our scene.
     //We can layout the order of events (A sequence) which allows us to perform any action listed.
     //Our TextBox should handle giving evidence. Since it's inline and we can set our rules inside of the 
-    public static int currentTextBoxIndex = 0;
-    public static (string speaker, string dialogue)[][] Sequence1;
-    (int index, string state)[] face = new (int index, string state)[]
-    {
-        (5,"smug")
-    };
 
     void obtainEvidence(string index)
     {
