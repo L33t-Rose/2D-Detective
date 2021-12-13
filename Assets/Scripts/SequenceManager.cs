@@ -52,6 +52,7 @@ public class SequenceManager : MonoBehaviour
 
     void changeFace(string state)
     {
+        print(state);
         //0: Normal
         //1: Smug
         //2: Mad
@@ -77,7 +78,6 @@ public class SequenceManager : MonoBehaviour
                 break;
         }
         anim.SetInteger("state", anim_state);
-
     }
 
     void loadNextScene(string nextScene)
