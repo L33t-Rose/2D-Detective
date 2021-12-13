@@ -55,13 +55,49 @@ public class Sequence2 : MonoBehaviour
                 ("Jack", "I am not saying anything. You won’t believe me anyway."),
                 ("Jack", "All of you look at me like I am the murderer."),
                 ("Jack", "That's why you still arrested me!"),
-                ("Joseph", "Look, if you say you didn’t do it, I need evidence to prove that you didn’t do it.")
+                ("Joseph", "Look, if you say you didn’t do it, I need evidence to prove that you didn’t do it."),
+                ("Joseph", "You have to tell us things, something to work with."),
+                ("Joseph", "If not, I can’t help you and you’ll have to like the jail cell they will put you in. "),
+                ("Jack", "..."),
+                ("Joseph", "I will ask you again. Where were you on the night of the 7th?"),
+                ("Jack", "I was at the office. Working with the others until 7pm."),
+                ("Joseph", "What were you working on?"),
+                ("Jack", "A presentation for a meeting next week."),
+                ("Joseph", "When did you leave the office?"),
+                ("Jack", "After our meeting ended. I don’t remember what time exactly."),
+                ("Joseph", "What did you do after?"),
+                ("Jack", "I went to buy food and I went home."),
+                ("Joseph", "Do you have the receipts?"),
+                ("Jack", "No, I wasn’t planning to return the chicken teriyaki.")
+            },
+            new (string speaker, string dialogue)[]//dialogue for "What Happeened?"
+            { 
+                ("Joseph", "Do you remember what happened during that meeting?"),
+                ("Jack", "We were just spending that night making powerpoints."),
+                ("Joseph", "Anything special happened?"),
+                ("Jack", "No, I don't remember anything weird happening."),
+                ("Joseph", "(God, you have to give me something to with.)"),
+                ("Jack", "I don't know what you are expecting."),
+                ("Jack", "There weren't any office drama."),
+                ("Jack", "No one hated each other."),
+                ("Jack", "But there was office romance."),
+                ("Joseph", "Would you like to tell me more about it?"),
+                ("Jack", "I knew Eliot liked Katie."),
+                ("Jack", "Although Eliot was working on the presentation with Andreas, he kept eyeing Katie."),
+                ("Jack", "Maybe because Katie was writing a letter instead of helping"),
+                ("Joseph", "A letter?"),
+                ("Jack", "A letter. I don't know what she was writing, but she was writing a lot.")
+            },
+            new (string speaker, string dialogue)[] //dialogue for "Relation with coworkers"
+            { 
+                ("Joseph", "How would you describe your coworkers?")
             }
+
         };
 
         print("Initialized");
     }
-
+    
     //office.transform.localScale = new Vector3(0, 0, 1);
     //partner.transform.localScale = new Vector3(0, 0, 1);
 }

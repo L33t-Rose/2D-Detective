@@ -68,10 +68,10 @@ public class Sequence1 : MonoBehaviour
                 ("Thomas", "Way ahead of you. The blood on the knife belonged to the victim and we didn’t find blood samples that belonged to someone else."),
                 ("Thomas", "The suspect left their fingerprints on it, it was a match with Jack Willow."),
                 ("Joseph", "Seems like an open case."),
-                ("Thomas", "The knife also belonged to Jack."),
                 ("Joseph", "(Yeah no, either this is really easy or he is one of the generic obvious suspect)"),
                 ("Joseph", "Alright, I guess we should do more investigation before Jack goes to court."),
                 ("Thomas", "Already have an idea aye?"),
+                ("_nextScene", "Sequence2")
             }
         };
 
