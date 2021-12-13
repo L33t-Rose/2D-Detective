@@ -84,6 +84,11 @@ public class TextBoxController : MonoBehaviour
                 print("hiding character");
                 autoNext = true;
                 canvas.SendMessage("changeFace",com.dialogue);
+                //0: Normal
+                //1: Smug
+                //2: Mad
+                //3: Judgy
+                //4: Sad
                 break;
             case "_obtainEv":
                 print("hiding char");

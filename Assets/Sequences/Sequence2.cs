@@ -45,6 +45,7 @@ public class Sequence2 : MonoBehaviour
                 ("Joseph", "Hi, I am detective Wilson. Are you Jack Willow?"),
                 ("Jack", "..Yes." ),
                 ("Joseph", "Before we begin, I will remind you that anything you say is-"),
+                ("_setFace", "2"),
                 ("Jack", "Look man, I didn’t kill Katie."),
                 ("Jack", "I’ve been trying to tell you guys I didn’t do it."),
                 ("Jack", "You guys come and go, asking me questions. But I will only say one thing."),
@@ -97,7 +98,8 @@ public class Sequence2 : MonoBehaviour
             //3
             new (string speaker, string dialogue)[] //dialogue for "Relation with coworkers"
             { 
-                ("Joseph", "How would you describe your coworkers?")
+                ("Joseph", "How would you describe your coworkers?"),
+                ("Jack", "I ")
             }
 
         };
