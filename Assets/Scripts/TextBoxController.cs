@@ -42,8 +42,9 @@ public class TextBoxController : MonoBehaviour
 
     void LoadDialogue(int index)
     {
+        currentIndex = 0;
         currentSequence = GameData.Sequence[index];
-        current = currentSequence[index];
+        current = currentSequence[currentIndex];
         if (isCurrentACommand())
         {
             useCommand(current);
@@ -124,7 +125,11 @@ public class TextBoxController : MonoBehaviour
                 return;
             }
             showCurrent();
-        } 
+        }
+        else
+        {
+            canvas.SendMessage("showMain");
+        }
     }
 
 }

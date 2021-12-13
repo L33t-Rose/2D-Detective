@@ -17,8 +17,7 @@ public class SequenceManager : MonoBehaviour
         var indexToInt = int.Parse(index);
         if(indexToInt >= 0)
         {
-            var data = GameData.EVIDENCE_DATA[indexToInt];
-            EVIDENCE_UI.SendMessage("loadEvidence", data);
+            EVIDENCE_UI.SendMessage("loadEvidence", indexToInt);
             EVIDENCE_UI.SendMessage("show");
         }
     }

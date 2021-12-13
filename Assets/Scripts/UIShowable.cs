@@ -51,7 +51,20 @@ public class UIShowable : MonoBehaviour
         TEXTBOX_UI.SendMessage("LoadDialogue",index);
     }
 
+    public void showMain()
+    {
+        purgeAll();
+        show(MAIN_UI);
+    }
+
     public void showTalk()
+    {
+        purgeAll();
+        show(MAIN_UI);
+        show(TALK_UI);
+    }
+
+    public void showEvidence()
     {
         purgeAll();
         show(MAIN_UI);

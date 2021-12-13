@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Sequence1 : MonoBehaviour
 {
-    public static Sprite[] EVIDENCE_SPRITES;
+    public Sprite[] EVIDENCE_SPRITES;
     public (string name, string desc)[] EVIDENCE_DATA;
     public static (string speaker, string dialogue)[][] Sequence;
     (int index, string state)[] face = new (int index, string state)[]

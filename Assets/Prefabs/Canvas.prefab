@@ -1757,7 +1757,7 @@ Transform:
   m_GameObject: {fileID: 7388875090664356191}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 67.946106, y: -119.50513, z: -54.70727}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 1, z: 1}
   m_Children:
   - {fileID: 7388875090729113693}
   m_Father: {fileID: 7388875091441500367}
@@ -2031,7 +2031,7 @@ RectTransform:
   m_GameObject: {fileID: 7388875090882367609}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 1, z: 1}
   m_Children:
   - {fileID: 7388875089826705975}
   - {fileID: 7388875091101112340}
@@ -2632,6 +2632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc3d82a0a63a35418b607292f8036a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EVIDENCE_IMAGE: {fileID: 0}
   EVIDENCE_NAME: {fileID: 7388875091160069174}
   EVIDENCE_DESCRIPTION: {fileID: 7388875089846323292}
 --- !u!1 &7388875091332887254
@@ -2829,6 +2830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 057db853c5a21bf438ac6e90d1d54b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EVIDENCE_SPRITES: []
 --- !u!114 &7388875091441500365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3235,7 +3237,7 @@ RectTransform:
   m_GameObject: {fileID: 7388875091643873859}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 1, z: 1}
   m_Children:
   - {fileID: 7388875090257991781}
   m_Father: {fileID: 7388875091441500367}

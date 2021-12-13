@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class EvidenceController : MonoBehaviour
 {
+    public Image EVIDENCE_IMAGE;
     public Text EVIDENCE_NAME;
     public Text EVIDENCE_DESCRIPTION;
     // Start is called before the first frame update
@@ -20,10 +21,13 @@ public class EvidenceController : MonoBehaviour
         
     }
 
-    void loadEvidence((string name, string desc)evidence)
+    void loadEvidence(int index)
     {
-        EVIDENCE_NAME.text = evidence.name;
-        EVIDENCE_DESCRIPTION.text = evidence.desc;
+        var data = GameData.EVIDENCE_DATA[index];
+        var sprite = GameData.EVIDENCE_SPRITES[index];
+        EVIDENCE_NAME.text = data.name;
+        EVIDENCE_DESCRIPTION.text = data.desc;
+        EVIDENCE_IMAGE.sprite = sprite;
     }
 
     void show()

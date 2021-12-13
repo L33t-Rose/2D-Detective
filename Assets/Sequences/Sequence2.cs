@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Sequence2 : MonoBehaviour
 {
-    public static Sprite[] EVIDENCE_SPRITES;
+    public Sprite[] EVIDENCE_SPRITES;
     public (string name, string desc)[] EVIDENCE_DATA;
     public static (string speaker, string dialogue)[][] Sequence;
     (int index, string state)[] face = new (int index, string state)[]
@@ -19,8 +19,12 @@ public class Sequence2 : MonoBehaviour
         {
             ("Autopsy Report","Name: Katie Miller\nCause Of Death:Knife wound to the chest, loss of blood.")
         };
+
+        GameData.EVIDENCE_SPRITES = EVIDENCE_SPRITES;
+
         GameData.Sequence = new (string speaker, string dialogue)[][]
         {
+            //0
             new (string speaker, string dialogue)[]
             {
                 ("_hideCharacter",""),
@@ -49,6 +53,7 @@ public class Sequence2 : MonoBehaviour
                 ("Jack", "KILL"),
                 ("Jack", "KATIE")
             },
+            //1
             new (string speaker, string dialogue)[] //dialogue choice for "Alibi?"
             { 
                 ("Joseph", "Where were you at the night of-"),
@@ -70,6 +75,7 @@ public class Sequence2 : MonoBehaviour
                 ("Joseph", "Do you have the receipts?"),
                 ("Jack", "No, I wasn’t planning to return the chicken teriyaki.")
             },
+            //2
             new (string speaker, string dialogue)[]//dialogue for "What Happeened?"
             { 
                 ("Joseph", "Do you remember what happened during that meeting?"),
@@ -88,12 +94,14 @@ public class Sequence2 : MonoBehaviour
                 ("Joseph", "A letter?"),
                 ("Jack", "A letter. I don't know what she was writing, but she was writing a lot.")
             },
+            //3
             new (string speaker, string dialogue)[] //dialogue for "Relation with coworkers"
             { 
                 ("Joseph", "How would you describe your coworkers?")
             }
 
         };
+
 
         print("Initialized");
     }
