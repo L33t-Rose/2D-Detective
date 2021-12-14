@@ -41,6 +41,7 @@ public class Sequence2 : MonoBehaviour
                 ("Officer", "Jack Willow, please take a seat."),
                 ("Joseph", "(Here he comes.)"),
                 ("_showCharacter",""),
+                ("", "Jack takes a seat."),
                 ("Jack", "..."),
                 ("Joseph", "Hi, I am detective Wilson. Are you Jack Willow?"),
                 ("Jack", "..Yes." ),
@@ -101,10 +102,11 @@ public class Sequence2 : MonoBehaviour
             { 
                 ("Joseph", "How would you describe your coworkers?"),
                 ("Jack", "I don't particularly like them, and I know why you guys arrested me."),
-                ("Jack", "Katie and I have been enemies, she thinks I am slacking and I am not doing work."),
-                ("Jack", "I hate those people who thinks you don't do anything when they can't see it."),
-                ("Jack", "You guys probably think 'He has history with Katie' so I have motive."),
-                ("Jack", "But you guys have no concrete evidence that it was me."),
+                ("Jack", "Katie and I have been enemies, she thinks I am slacking and I never do work"),
+                ("Jack", "I hate those people who thinks you are slacking when you are doing background work."),
+                ("Jack", "Like, just because you don't see it, doesn't mean I am not helping."),
+                ("Jack", "You guys are probably thinking \"He has history with Katie so he has motive\"."),
+                ("Jack", "But you guys have no concrete evidence that I did it."),
                 ("Joseph", "(He doesn't think we have concrete evidence...)"),
                 ("Joseph", "(Is he stupid?)"),
                 ("Joseph", "Alright, what about others?"),
@@ -112,9 +114,44 @@ public class Sequence2 : MonoBehaviour
                 ("Jack", "Eliot?"),
                 ("_setFace", "judgy"),
                 ("Jack", "Biggest simp I've seen."),
-                ("Jack", "He always has some brown on his nose. ")
+                ("Jack", "He always has some brown on his nose. "),
+                ("Jack", "Always trying to get on their good side, including the boss."),
+                ("Jack", "But he is productive, I will give him that."),
+                ("Joseph", "What about Andreas?"),
+                ("_setFace", "normal"),
+                ("Jack", "She is alright, probably the elite in our company."),
+                ("Jack", "Always doing work, smart too."),
+                ("Jack", "She is a bit arrogant, she likes to brag about herself especially her piano."),
+                ("Jack", "I don't mind that though, she has the skill to back it up."),
+                ("Jack", "Unlike somebody."),
+                ("_setFace", "judgy")
 
 
+            },
+
+            new (string speaker, string dialogue)[] // dialogue after interrogation
+            {
+                ("_setFace", "normal"),
+                ("Joseph", "Alright, it was nice talking to you."),
+                ("Joseph", "That will be all for now until we call you again."),
+                ("Jack", "Detective Joseph."),
+                ("Joseph", "?"),
+                ("Jack", "...I am sorry about earlier"),
+                ("Jack", "I was just angry that I got arrested for something I didn’t do."),
+                ("Jack", "The cops were all suspicious and saying I am obviously the murderer."),
+                ("Jack", "I didn’t kill her. I don’t know what happened."),
+                ("Jack", "It's been two days and the cops kept treating like I killed her."),
+                ("Jack", "I can tell you are different."),
+                ("Jack", "Please, I am innocent."),
+                ("Joseph", "I understand, I will do my best to solve this case."),
+                ("Officer", "This way, it could be him.Jack"),
+                ("_hideCharacter",""),
+                ("","Jack leaves the room."),
+                ("Thomas", "Do you believe him?"),
+                ("Thomas", "Do you actually think he didn't do it?"),
+                ("Joseph", "With the cards on the table, the game is either over."),
+                ("Joseph", "Or someone is going to pull the biggest reverse card on us."),
+                ("Joseph", "That someone can very well be Jack.")
 
             }
 
