@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UIShowable : MonoBehaviour
 {
-
+    public GameObject INVESTIGATION_UI;
     public GameObject MAIN_UI;
     public GameObject TALK_UI;
     public GameObject TEXTBOX_UI;
@@ -40,15 +40,24 @@ public class UIShowable : MonoBehaviour
         hide(TALK_UI);
         hide(EVIDENCE_LIST_UI);
         hide(TEXTBOX_UI);
+        hide(INVESTIGATION_UI);
     }
 
     public void showTextbox(int index)
     {
-        hide(MAIN_UI);
-        hide(TALK_UI);
-        hide(EVIDENCE_LIST_UI);
+        purgeAll();
         show(TEXTBOX_UI);
         TEXTBOX_UI.SendMessage("LoadDialogue",index);
+    }
+
+
+    public void showInvestigationTextbox(int index)
+    {
+        purgeAll();
+        show(INVESTIGATION_UI);
+        show(TEXTBOX_UI);
+        TEXTBOX_UI.SendMessage("LoadDialogue", index);
+
     }
 
     public void showMain()
@@ -69,6 +78,12 @@ public class UIShowable : MonoBehaviour
         purgeAll();
         show(MAIN_UI);
         show(TALK_UI);
+    }
+
+    public void showInvestigate()
+    {
+        purgeAll();
+        show(INVESTIGATION_UI);
     }
 
     void hide(GameObject ui_elem)

@@ -1,14 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 public class ButtonController : MonoBehaviour
 {
-    public int index;
-    Button m_button;
-    private void Start()
+    public Texture2D cursor;
+    public CursorMode cursorMode = CursorMode.Auto;
+    public Vector2 hotSpot = Vector2.zero;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        m_button = GetComponent<Button>();
-        //m_button.onClick.AddListener(SendMessageUpwards("LoadDialogue", index));
+        
+    }
+
+    private void OnMouseEnter()
+    {
+        print("test enter");
+        Cursor.SetCursor(cursor, hotSpot, cursorMode);
+    }
+
+    private void OnMouseExit()
+    {
+        Cursor.SetCursor(null, hotSpot, cursorMode);
     }
 }
