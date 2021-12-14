@@ -427,7 +427,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.077
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -587,6 +587,11 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 483641015}
+    - target: {fileID: 7388875090318098995, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -125.38774
+      objectReference: {fileID: 0}
     - target: {fileID: 7388875091441500364, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
         type: 3}
       propertyPath: EVIDENCE_SPRITES.Array.size
@@ -722,6 +727,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388875091695492842, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -125276.91
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6eb6c0e321b094345b4e83c904ad2bbf, type: 3}
