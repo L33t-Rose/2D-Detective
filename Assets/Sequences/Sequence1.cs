@@ -19,6 +19,9 @@ public class Sequence1 : MonoBehaviour
         {
             ("Autopsy Report","Name: Katie Miller\nCause Of Death:\nKnife wound to the chest, loss of blood.")
         };
+
+        GameData.EVIDENCE_SPRITES = EVIDENCE_SPRITES;
+
         GameData.Sequence = new (string speaker, string dialogue)[][]
         {
             new (string speaker, string dialogue)[]{

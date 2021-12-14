@@ -23,6 +23,7 @@ public class EvidenceController : MonoBehaviour
 
     void loadEvidence(int index)
     {
+        print(GameData.EVIDENCE_SPRITES);
         var data = GameData.EVIDENCE_DATA[index];
         var sprite = GameData.EVIDENCE_SPRITES[index];
         EVIDENCE_NAME.text = data.name;
