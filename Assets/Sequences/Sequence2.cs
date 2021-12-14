@@ -128,7 +128,7 @@ public class Sequence2 : MonoBehaviour
 
 
             },
-
+            //4
             new (string speaker, string dialogue)[] // dialogue after interrogation
             {
                 ("_setFace", "normal"),
@@ -153,6 +153,20 @@ public class Sequence2 : MonoBehaviour
                 ("Joseph", "Or someone is going to pull the biggest reverse card on us."),
                 ("Joseph", "That someone can very well be Jack.")
 
+            },
+            //5
+            new (string speaker, string dialogue)[] //Wall
+            { 
+                ("Joseph", "(The wall of the interrogation room.)"),
+                ("Joseph", "(The color makes the room feel like a dungeon.)"),
+                ("Joseph", "(It also feels like a prison.)")
+            },
+            //6
+            new (string speaker, string dialogue)[]//table
+            {
+                ("Joseph", "(The table of the interrogation room.)"),
+                ("Joseph", "(It feels oddly nice.)"),
+                ("Joseph", "(But why did they put a wood table in the interrogation room?)")
             }
 
         };
