@@ -17,9 +17,12 @@ public class TextBoxController : MonoBehaviour
     (string speaker, string dialogue) current;
     int currentIndex = 0;
 
+    string goTo;
+
     // Start is called before the first frame update
     void Start()
     {
+        goTo = "";
         //Debug.Log(GameData.Sequence);
         //anim.SetBool("smugPartner", true);
         //currentSequence = GameData.Sequence[0];
@@ -98,6 +101,10 @@ public class TextBoxController : MonoBehaviour
                 autoNext = true;
                 canvas.SendMessage("hideObtainedEvidence");
                 break;
+            case "_goTo":
+                autoNext = true;
+                goTo = com.dialogue;
+                break;
             case "_nextScene":
                 canvas.SendMessage("loadNextScene",com.dialogue);
                 break;
@@ -133,7 +140,10 @@ public class TextBoxController : MonoBehaviour
         }
         else
         {
-            canvas.SendMessage("showMain");
+            if (goTo.Equals(""))
+                canvas.SendMessage("showMain");
+            else if (goTo.Equals("investigate"))
+                canvas.SendMessage("showInvestigate");
         }
     }
 

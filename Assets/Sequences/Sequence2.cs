@@ -15,10 +15,7 @@ public class Sequence2 : MonoBehaviour
         {
             ("Autopsy Report","Name: Katie Miller\nCause Of Death:Knife wound to the chest, loss of blood.")
         };
-
-
         GameData.EVIDENCE_SPRITES = EVIDENCE_SPRITES;
-
         GameData.REQUIRED_INTERACTIONS = new HashSet<GameObject>(_requiredInteractions);
         GameData.Sequence = new (string speaker, string dialogue)[][]
         {
@@ -158,7 +155,8 @@ public class Sequence2 : MonoBehaviour
                 ("Joseph", "(The wall of the interrogation room.)"),
                 ("Joseph", "(The color makes the room feel like a dungeon.)"),
                 ("Joseph", "(It also feels like a prison.)"),
-                ("_showCharacter",""),
+                ("_goTo","investigate"),
+                //("_showCharacter",""),
             },
             //6
             new (string speaker, string dialogue)[]//table
@@ -166,7 +164,8 @@ public class Sequence2 : MonoBehaviour
                 ("Joseph", "(The table of the interrogation room.)"),
                 ("Joseph", "(It feels oddly nice.)"),
                 ("Joseph", "(But why did they put a wood table in the interrogation room?)"),
-                ("_showCharacter","")
+                ("_goTo","investigate"),
+                //("_showCharacter","")
             }
 
         };

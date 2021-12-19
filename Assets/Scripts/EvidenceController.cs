@@ -12,7 +12,6 @@ public class EvidenceController : MonoBehaviour
     void Start()
     {
         hide();
-        //show();
     }
 
     // Update is called once per frame
