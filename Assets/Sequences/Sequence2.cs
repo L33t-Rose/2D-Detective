@@ -6,12 +6,8 @@ using UnityEngine.UI;
 public class Sequence2 : MonoBehaviour
 {
     public Sprite[] EVIDENCE_SPRITES;
-    public (string name, string desc)[] EVIDENCE_DATA;
-    public static (string speaker, string dialogue)[][] Sequence;
-    (int index, string state)[] face = new (int index, string state)[]
-    {
-        (5,"smug")
-    };
+    public GameObject[] _requiredInteractions;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +16,10 @@ public class Sequence2 : MonoBehaviour
             ("Autopsy Report","Name: Katie Miller\nCause Of Death:Knife wound to the chest, loss of blood.")
         };
 
+
         GameData.EVIDENCE_SPRITES = EVIDENCE_SPRITES;
 
+        GameData.REQUIRED_INTERACTIONS = new HashSet<GameObject>(_requiredInteractions);
         GameData.Sequence = new (string speaker, string dialogue)[][]
         {
             //0
@@ -159,14 +157,16 @@ public class Sequence2 : MonoBehaviour
             { 
                 ("Joseph", "(The wall of the interrogation room.)"),
                 ("Joseph", "(The color makes the room feel like a dungeon.)"),
-                ("Joseph", "(It also feels like a prison.)")
+                ("Joseph", "(It also feels like a prison.)"),
+                ("_showCharacter",""),
             },
             //6
             new (string speaker, string dialogue)[]//table
             {
                 ("Joseph", "(The table of the interrogation room.)"),
                 ("Joseph", "(It feels oddly nice.)"),
-                ("Joseph", "(But why did they put a wood table in the interrogation room?)")
+                ("Joseph", "(But why did they put a wood table in the interrogation room?)"),
+                ("_showCharacter","")
             }
 
         };

@@ -8,6 +8,7 @@ public class SequenceManager : MonoBehaviour
     public GameObject backGround;
     public GameObject character;
     public Animator anim;
+
     //We want a system that allows us to control the elements in our scene.
     //We can layout the order of events (A sequence) which allows us to perform any action listed.
     //Our TextBox should handle giving evidence. Since it's inline and we can set our rules inside of the 
@@ -83,5 +84,13 @@ public class SequenceManager : MonoBehaviour
     void loadNextScene(string nextScene)
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
+    }
+
+    void checkForNextScene()
+    {
+        if (GameData.REQUIRED_INTERACTIONS.Equals(GameData.visited))
+        {
+
+        }
     }
 }

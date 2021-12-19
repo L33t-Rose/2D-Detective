@@ -10,6 +10,9 @@ public class GameData : MonoBehaviour
     public static (string name, string desc)[] EVIDENCE_DATA;
     public static Sprite[] EVIDENCE_SPRITES;
 
+    public static HashSet<GameObject> REQUIRED_INTERACTIONS;
+    public static HashSet<GameObject> visited = new HashSet<GameObject>();
+
 
     public int officeCounter;
     // Start is called before the first frame update
@@ -17,27 +20,4 @@ public class GameData : MonoBehaviour
     {
         officeCounter = 0;
     }
-
-    public void updateFace()
-    {
-        //if (this.GetFace(currentTextBoxIndex).index)
-        //{
-
-        //}
-    }
-
-    private (int index, string state) GetFace(int index)
-    {
-        for (int i = 0; i < faces.Length; i++)
-        {
-            var face = faces[i];
-            if (face.index == currentTextBoxIndex)
-            {
-                return face;
-            }
-        }
-        return (0,null);
-    }
-
-    // Update is called once per frame
 }

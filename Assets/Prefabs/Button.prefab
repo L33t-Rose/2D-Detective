@@ -175,6 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90d5696366315c143adaa58bd40ad919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursor: {fileID: 2800000, guid: 0abd9af847b7d1746a6a2b64ef55e4b7, type: 3}
+  cursor: {fileID: 2800000, guid: 7ed811e68dd2cb84aac21a98949a85f8, type: 3}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}

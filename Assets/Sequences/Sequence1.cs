@@ -6,12 +6,7 @@ using UnityEngine.UI;
 public class Sequence1 : MonoBehaviour
 {
     public Sprite[] EVIDENCE_SPRITES;
-    public (string name, string desc)[] EVIDENCE_DATA;
-    public static (string speaker, string dialogue)[][] Sequence;
-    (int index, string state)[] face = new (int index, string state)[]
-    {
-        (5,"smug")
-    };
+    public GameObject[] _requiredInteractions;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +16,8 @@ public class Sequence1 : MonoBehaviour
         };
 
         GameData.EVIDENCE_SPRITES = EVIDENCE_SPRITES;
+
+        GameData.REQUIRED_INTERACTIONS = new HashSet<GameObject>(_requiredInteractions);
 
         GameData.Sequence = new (string speaker, string dialogue)[][]
         {
