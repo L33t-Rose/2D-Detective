@@ -48,6 +48,7 @@ public class TextBoxController : MonoBehaviour
         currentIndex = 0;
         currentSequence = GameData.Sequence[index];
         current = currentSequence[currentIndex];
+        goTo = "";
         if (isCurrentACommand())
         {
             useCommand(current);
