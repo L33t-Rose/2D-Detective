@@ -10,14 +10,9 @@ public class GameData : MonoBehaviour
     public static (string name, string desc)[] EVIDENCE_DATA;
     public static Sprite[] EVIDENCE_SPRITES;
 
+    public static HashSet<(Sprite image, (string name, string desc))> OBTAINED_EVIDENCE = new HashSet<(Sprite, (string name, string desc))>();
+
     public static HashSet<GameObject> REQUIRED_INTERACTIONS;
     public static HashSet<GameObject> visited = new HashSet<GameObject>();
 
-
-    public int officeCounter;
-    // Start is called before the first frame update
-    void Start()
-    {
-        officeCounter = 0;
-    }
 }

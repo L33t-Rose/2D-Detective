@@ -76,8 +76,8 @@ public class UIShowable : MonoBehaviour
     public void showEvidence()
     {
         purgeAll();
-        show(MAIN_UI);
-        show(TALK_UI);
+        EVIDENCE_LIST_UI.SendMessage("loadEvidence");
+        show(EVIDENCE_LIST_UI);
     }
 
     public void showInvestigate()

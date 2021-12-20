@@ -31,24 +31,20 @@ public class SequenceManager : MonoBehaviour
     void hideBackground()
     {
         backGround.SendMessage("hide");
-        //backGround.transform.localScale = new Vector3(0, 0, 1);
     }
 
     void showBackground()
     {
         backGround.SendMessage("show");
-        //backGround.transform.localScale = new Vector3(13.31127f, 10.00116f, 1); 
     }
 
     void hideCharacter()
     {
         character.SendMessage("hide");
-        //character.transform.localScale = new Vector3(0, 0, 1);
     }
     void showCharacter()
     {
         character.SendMessage("show");
-        //character.transform.localScale = new Vector3(7, 7, 1);
     }
 
     void changeFace(string state)

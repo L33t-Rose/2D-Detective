@@ -78,11 +78,4 @@ public class Sequence1 : MonoBehaviour
         print("Initialized");
     }
 
-    
-
-
-
-
-//office.transform.localScale = new Vector3(0, 0, 1);
-//partner.transform.localScale = new Vector3(0, 0, 1);
 }

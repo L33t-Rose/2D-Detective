@@ -28,6 +28,9 @@ public class EvidenceController : MonoBehaviour
         EVIDENCE_NAME.text = data.name;
         EVIDENCE_DESCRIPTION.text = data.desc;
         EVIDENCE_IMAGE.sprite = sprite;
+
+        GameData.OBTAINED_EVIDENCE.Add((sprite, data));
+        print(GameData.OBTAINED_EVIDENCE);
     }
 
     void show()
