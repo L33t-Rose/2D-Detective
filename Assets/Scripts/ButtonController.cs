@@ -5,7 +5,7 @@ using UnityEngine;
 public class ButtonController : MonoBehaviour
 {
     public Texture2D cursor;
-    public CursorMode cursorMode = CursorMode.Auto;
+    public CursorMode cursorMode = CursorMode.ForceSoftware;
     public Vector2 hotSpot = Vector2.zero;
 
     // Start is called before the first frame update
