@@ -12,7 +12,9 @@ public class Sequence1 : MonoBehaviour
     {
         GameData.EVIDENCE_DATA = new(string name, string desc)[]
         {
+            //0
             ("Autopsy Report","Name: Katie Miller\nCause Of Death:\nKnife wound to the chest, loss of blood."),
+            //1
             ("Murder Weapon", "Belongs to Jack Willow. Fingerprints test indicates a perfect match with Jack Willow. DNA test was done, the blood belonged to the victim, Katie Miller.")
         };
 
@@ -69,6 +71,8 @@ public class Sequence1 : MonoBehaviour
                 ("Thomas", "Way ahead of you. The blood on the knife belonged to the victim and we didn’t find blood samples that belonged to someone else."),
                 ("Thomas", "The suspect left their fingerprints on it, it was a match with Jack Willow."),
                 //obtain knife evidence 
+                ("_obtainEv","1"),
+                ("_hideObtainedEnv",""),
                 ("Joseph", "Seems like an open case."),
                 ("Joseph", "(Yeah no, either this is really easy or he is one of the generic obvious suspect)"),
                 ("Joseph", "Alright, I guess we should do more investigation before Jack goes to court."),

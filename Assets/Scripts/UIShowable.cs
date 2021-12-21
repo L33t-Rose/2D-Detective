@@ -89,12 +89,6 @@ public class UIShowable : MonoBehaviour
 
     public void showNextSceneButton()
     {
-        print("called");
-        print("called");
-        print("called");
-        print("called");
-        print("called");
-        print("called");
         show(NEXT_SCENE_BUTTON);
     }
 

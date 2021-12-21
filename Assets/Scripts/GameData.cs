@@ -13,7 +13,7 @@ public class GameData : MonoBehaviour
     public static Sprite[] EVIDENCE_SPRITES;
 
     //For Evidence UI. 
-    public static HashSet<(Sprite image, (string name, string desc))> OBTAINED_EVIDENCE = new HashSet<(Sprite, (string name, string desc))>();
+    public static HashSet<(Sprite image, (string name, string desc) details)> OBTAINED_EVIDENCE = new HashSet<(Sprite, (string name, string desc))>();
 
     //For allowing the player to go the next scene
     //REQUIRED_INTERACTIONS is a static list of all the actions the user can take

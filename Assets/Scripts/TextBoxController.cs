@@ -23,18 +23,6 @@ public class TextBoxController : MonoBehaviour
     void Start()
     {
         goTo = "";
-        //Debug.Log(GameData.Sequence);
-        //anim.SetBool("smugPartner", true);
-        //currentSequence = GameData.Sequence[0];
-        //current = currentSequence[0];
-        //if (isCurrentACommand())
-        //{
-        //    useCommand(current);
-        //}
-        //else
-        //{
-        //    showCurrent();
-        //}
     }
 
     bool isCurrentACommand()
