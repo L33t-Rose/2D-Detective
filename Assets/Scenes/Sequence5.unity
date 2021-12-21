@@ -785,7 +785,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BackGroundColor: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -842,7 +842,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9b28a6e203f68754a91d197850bd2fa0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 43d87816242f55c49b131cdd59e513a4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.077
   m_Pitch: 1
@@ -1001,11 +1001,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 464195206014988298, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 464195206014988298, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1180,11 +1175,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5915433508075090757, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -255.99994
       objectReference: {fileID: 0}
     - target: {fileID: 5915433508075090757, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
         type: 3}

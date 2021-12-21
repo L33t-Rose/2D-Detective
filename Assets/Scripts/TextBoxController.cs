@@ -93,8 +93,14 @@ public class TextBoxController : MonoBehaviour
             case "_nextScene":
                 canvas.SendMessage("loadNextScene",com.dialogue);
                 break;
-                
-              
+            case "_clearInteractions":
+                autoNext = true;
+                GameData.visited.Clear();
+                GameData.REQUIRED_INTERACTIONS.Clear();
+                break;
+
+
+
 
         }
         if (autoNext)

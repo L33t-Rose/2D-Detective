@@ -100,6 +100,7 @@ public class Sequence3Pt2 : MonoBehaviour
                 ("Thomas", "Then, he had to go find Katie after the meeting, which is around 7pm - 8pm!"),
                 ("Joseph", "Looks like we got ourselves a sussy baka."),
                 ("Thomas", "Please don't say that ever again."),
+                ("_clearInteractions",""),
                 ("_nextScene", "Sequence3Pt3")
             }
 

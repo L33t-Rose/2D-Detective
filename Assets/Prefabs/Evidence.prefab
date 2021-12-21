@@ -1667,7 +1667,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7388875091441500362, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
+          type: 3}
         m_MethodName: showMain
         m_Mode: 1
         m_Arguments:
@@ -1678,7 +1679,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7388875091441500365, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
+          type: 3}
         m_MethodName: SendMessage
         m_Mode: 5
         m_Arguments:

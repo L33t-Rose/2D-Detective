@@ -115,6 +115,7 @@ public class Sequence3Pt3 : MonoBehaviour
                 ("Thomas", "What's up-"),
                 ("Joseph", "nOt mUcH, wAt sUP wIF yOU?"),
                 ("Thomas", "AHHHHHHHHHHHHHHHHHHHHHHHH"),
+                ("_clearInteractions",""),
                 ("_nextScene","Sequence3Pt4")
             }
 

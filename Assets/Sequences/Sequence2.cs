@@ -151,6 +151,7 @@ public class Sequence2 : MonoBehaviour
                 ("Joseph", "That someone can very well be Jack."),
                 ("Thomas", "...Wow."),
                 ("Joseph", "With that, we should go check out their office and find more clues."),
+                ("_clearInteractions",""),
                 ("_nextScene", "Sequence3Pt1")
 
             },

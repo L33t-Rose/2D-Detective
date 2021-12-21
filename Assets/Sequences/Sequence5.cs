@@ -24,11 +24,20 @@ public class Sequence5 : MonoBehaviour
         Debug.Log(GameData.REQUIRED_INTERACTIONS.Count);
         GameData.Sequence = new (string speaker, string dialogue)[][]
         {
+            //Anim for Andreas
+            //0 normal
+            //1 smug, smug
+            //2 mad, mad
+            //3 smile, judgy
+            //4 scary, sad
+            //
+
             //0
             new (string speaker, string dialogue)[]
             {
                 ("Joseph", "Andreas."),
-                ("Andreas", "Detective, is there something you need to tell me."),
+                ("Andreas", "Detective, is there something you need to tell me?"),
+                ("Andreas", "You were in a hurry to ask me to meet you here again."),
                 ("Joseph", "I know what you did."),
                 ("Andreas", "I am afraid I don't know what you are referring to."),
                 ("Joseph", "You killed Katie Miller, and I am here to arrest you."),
@@ -40,6 +49,7 @@ public class Sequence5 : MonoBehaviour
             //1 First evidence Incorrect
             new (string speaker, string dialogue)[]
             {
+                ("_setFace","smug"),
                 ("Andreas", "What is that suppose to prove?"),
                 ("Andreas", "I don't see how that proves my motive."),
                 ("Andreas", "Aren't you a detective?"),
@@ -51,12 +61,14 @@ public class Sequence5 : MonoBehaviour
             //2 First Evidence Correct
             new (string speaker, string dialogue)[]
             {
+                ("_setFace","normal"),
                 ("Andreas", "What is this letter?"),
                 ("Joseph", "This is a letter written by Katie Miller."),
                 ("Joseph", "Katie was planning to give it to the manager and have Jack fired."),
                 ("Andreas", "So? How does Jack concern me?"),
                 ("Andreas", "He is only my coworker. It's true that he is a slacker. I would be happy if he is fired."),
                 ("Joseph", "That's not true."),
+                ("_setFace","mad"),
                 ("Andreas", "What?"),
                 ("Joseph", "You like Jack."),
                 ("Joseph", "In fact, you love him deeply and you are obsessed."),
@@ -67,7 +79,8 @@ public class Sequence5 : MonoBehaviour
             },
             //3 Second Evidence Incorrect
             new (string speaker, string dialogue)[]
-            { 
+            {
+                ("_setFace","smug"),
                 ("Andreas", "HAHAHA!"),
                 ("Andreas", "This is what made you think I love Jack?"),
                 ("Andreas", "Detective, you should be a stand-up comedian!"),
@@ -78,6 +91,7 @@ public class Sequence5 : MonoBehaviour
             new (string speaker, string dialogue)[]
             {
                 ("Joseph", "This is a picture of Jack."),
+                ("_setFace","mad"),
                 ("Andreas", "?! How did you find that?"),
                 ("Joseph", "I know you hid it behind you desk."),
                 ("Joseph", "To think that you have a picture of him and look at it every so often."),
@@ -85,8 +99,10 @@ public class Sequence5 : MonoBehaviour
                 ("Joseph", "It proves that you are obsessed with him."),
                 ("Joseph", "(You are what they called, a yandere)."),
                 ("Joseph", "As someone who loves Jack, you wouldn't want him to leave the office and lose his job."),
+                ("_setFace","normal"),
                 ("Joseph", "So, you decided to kill Katie when you found out she was going to have him fired."),
                 ("Andreas", "..."),
+                ("_setFace","judgy"),
                 ("Andreas", "Well, now that your theory creates a motive, how could I possibly have killed Katie?"),
                 ("Andreas", "I had no ways to kill her."),
                 ("Joseph", "How naive."),
@@ -98,6 +114,7 @@ public class Sequence5 : MonoBehaviour
             //5 Third Evidence Incorrect
             new (string speaker, string dialogue)[]
             {
+                ("_setFace","judgy"),
                 ("Andreas", "Detective, I have piano rehearsal to attend to."),
                 ("Andreas", "Don't waste my time."),
                 ("Joseph", "It was only a fluke. This is what you used to kill her."),
@@ -107,10 +124,12 @@ public class Sequence5 : MonoBehaviour
             //6 Third Evidence Correct
             new (string speaker, string dialogue)[]
             {
+                ("_setFace","normal"),
                 ("Andreas", "A knife?"),
                 ("Joseph", "You used Jack's knife to stab her."),
                 ("Joseph", "You heard him talking about his knife in the black box during the meeting."),
                 ("Joseph", "So you stole it and killed Katie with it."),
+                ("_setFace","smug"),
                 ("Andreas", "Stole it? What a joke."),
                 ("Andreas", "Jack brough it with him when he left office."),
                 ("Andreas", "Plus, I left before Jack. There is no way I could have my hands on that box."),
@@ -121,7 +140,7 @@ public class Sequence5 : MonoBehaviour
             },
             //7 Foruth Evidence Incorrect
             new (string speaker, string dialogue)[]
-            { 
+            {   ("_setFace","smug"),
                 ("Andreas", "What does this prove?"),
                 ("Andreas", "Do you have bad eye sight or something?"),
                 ("Joseph", "(Ouch.)"),
@@ -131,9 +150,11 @@ public class Sequence5 : MonoBehaviour
             //8 Fourth Evidence Correct
             new (string speaker, string dialogue)[]
             {
+                ("_setFace","normal"),
                 ("Joseph", "This is a log from the machine, it states the exact time each person left."),
                 ("Joseph", "The time stamp shows that you left after Katie and Jack."),
                 ("Joseph", "Plus, Jack already said that he left the knife at the office and he had forgot about it."),
+                ("_setFace","judgy"),
                 ("Andreas", "...I can see that you did your homework."),
                 ("Andreas", "According to that log, Katie left before me."),
                 ("Andreas", "There is the chance that Katie stole the knife."),
@@ -149,6 +170,7 @@ public class Sequence5 : MonoBehaviour
             //9  Fifth Evidence Incorrect
             new (string speaker, string dialogue)[]
             {
+                ("_setFace","judgy"),
                 ("Andreas", "Please."),
                 ("Andreas", "Speak to me when you have collected your thoughts."),
                 ("Andreas", "It's a shame to know that the police force has a detective like you."),
@@ -158,6 +180,7 @@ public class Sequence5 : MonoBehaviour
             //10 Fifth Evidence Correct
             new (string speaker, string dialogue)[]
             {
+                ("_setFace","mad"),
                 ("Joseph", "If she had held the knife in her hands, we would've found her fingerprints on it."),
                 ("Joseph", "But the only fingerprints we found on it, was Jack's."),
                 ("Andreas", "WHAT!"),
@@ -169,8 +192,17 @@ public class Sequence5 : MonoBehaviour
                 ("Joseph", "When you stabbed Katie, you hurt your hand."),
                 ("Joseph", "I don't think I need to show you evidence for that."),
                 ("Andreas", "...Not like this."),
+                ("_setFace","sad"),
                 ("Andreas", "NOT LIKE THIS!"),
+                ("_hideCharacter",""),
                 ("", "Andreas collapsed"),
+                ("", "After Andreas collapsed, she was arrested."),
+                ("", "Detective Joseph wrote a report regarding his investigation, it was used in the trial of Katie Miller."),
+                ("", "Andres was sentenced the death penalty."),
+                ("", "Jack was freed once detective Joseph brought in Andreas."),
+                ("", "The 2D Detective has solved another case."),
+                
+                ("_nextScene","Sequence6")
                 
             }
 

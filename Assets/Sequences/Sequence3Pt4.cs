@@ -91,6 +91,7 @@ public class Sequence3Pt4 : MonoBehaviour
                 ("Joseph", "Is there some hidden history between the two...?"),
                 ("Joseph", "Hmm, oh well. I will figure it out later."),
                 ("Joseph", "But now, we have a potential suspect waiting for interrogation."),
+                ("_clearInteractions",""),
                 ("_nextScene", "Sequence3Pt5")
             }
 

@@ -67,7 +67,8 @@ public class Sequence3Pt6: MonoBehaviour
                 ("Joseph", "It is still too soon to make a conclusion."),
                 ("Joseph", "There is one more suspect."),
                 ("Joseph", "We shall see how that turns the tide."),
-                ("_nextScene", "Sequnce 4")
+                ("_clearInteractions",""),
+                ("_nextScene", "Sequence4Pt1")
             }
             
 

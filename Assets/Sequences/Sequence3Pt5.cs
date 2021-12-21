@@ -15,7 +15,7 @@ public class Sequence3Pt5 : MonoBehaviour
     {
         GameData.EVIDENCE_DATA = new (string name, string desc)[]
         {
-            ("Autopsy Report","Name: Katie Miller\nCause Of Death:Knife wound to the chest, loss of blood.")
+            ("Log","Name: A log of everyone's check outs. \n 7:15, Jack Willow         7:17, Katie Miller, \n 7:20, Andreas Grace         8:11, Eliot Bernandez.")
         };
         GameData.EVIDENCE_SPRITES = EVIDENCE_SPRITES;
         Debug.Log("list of evidence sprites" + EVIDENCE_SPRITES.Length);
@@ -140,6 +140,8 @@ public class Sequence3Pt5 : MonoBehaviour
                 ("_hideCharacter", ""),
                 ("", "Joseph left."),
                 ("Thomas", "Hey Joseph, I got a copy of the log."),
+                ("_obtainEv", "0"),
+                ("_hideObtainedEnv",""),    
                 //obtained evidence.
                 ("Joseph", "Thank you so much."),
                 ("Thomas", "So what did you learn?"),
@@ -148,7 +150,8 @@ public class Sequence3Pt5 : MonoBehaviour
                 ("Joseph", "He has a watertight alibi. He didn't deliver the letter and he is sad that he can't anymore."),
                 ("Thomas", "Wow, I feel bad for the guy."),
                 ("Thomas", "Where to now?"),
-                ("Joseph", "We have to pay our friend another visit."), 
+                ("Joseph", "We have to pay our friend another visit."),
+                ("_clearInteractions",""),
                 ("_nextScene", "Sequence3Pt6")
 
             }

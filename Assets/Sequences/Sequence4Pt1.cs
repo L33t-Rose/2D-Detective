@@ -50,7 +50,12 @@ public class Sequence4Pt1 : MonoBehaviour
                 ("Joseph", "(I don't think I shook her right hand that hard. Is it injured?"),
                 ("Andreas", "It's fine. What can I help you with, detective?"),
                 ("Joseph", "We just have a few simple questions for you. I will remind you that anything you say will be admissable in court."),
-                ("Andreas", "Sure thing, can you make it quick? I have piano rehearsal for my concert two days from now.")
+                ("Andreas", "Sure thing, can you make it quick? I have piano rehearsal for my concert two days from now."),
+                ("Joseph", "Just a quick one before we start, why do you wear gloves?"),
+                ("Andreas", "Oh! Right."),
+                ("Andreas", "Because the concert is coming up, I want to wear gloves to protect my hands."),
+                ("Andreas", "So for the past few days, I have been wearing gloves."),
+                ("Joseph", "I see.")
             },
             //1 What Happened?
             new (string speaker, string dialogue)[]
@@ -105,6 +110,7 @@ public class Sequence4Pt1 : MonoBehaviour
                 ("Joseph", "We should head back to the precinct."),
                 ("Thomas", "Detective?"),
                 ("Joseph", "I think I have everything I need. I just need to think."),
+                ("_clearInteractions",""),
                 ("_nextScene","Sequence4Pt2")
 
             }

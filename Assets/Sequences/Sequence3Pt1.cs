@@ -13,7 +13,7 @@ public class Sequence3Pt1 : MonoBehaviour
     {
         GameData.EVIDENCE_DATA = new (string name, string desc)[]
         {
-            ("Orange Letter","A letter written by Katie. Contains Jack's misdeamnors and request of Jack's removal from the office.")
+            ("Orange Letter","A letter written by Katie. Contains Jack's misdemeanors and request of Jack's removal from the office.")
         };
 
         GameData.EVIDENCE_SPRITES = EVIDENCE_SPRITES;
@@ -116,6 +116,7 @@ public class Sequence3Pt1 : MonoBehaviour
                    ("Joseph", "So that's left, right?"),
                    ("Thomas", "Right."),
                    ("Joseph", "...Sometimes I want to just slap you in the face."),
+                   ("_clearInteractions",""),
                    ("_nextScene", "Sequence3Pt2")
 
                }

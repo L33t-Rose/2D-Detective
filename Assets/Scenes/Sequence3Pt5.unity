@@ -1194,7 +1194,7 @@ PrefabInstance:
     - target: {fileID: 5915433508075090757, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -216979.08
+      value: -227757.16
       objectReference: {fileID: 0}
     - target: {fileID: 6060818379183524886, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
         type: 3}
@@ -1471,6 +1471,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8450412151538388161, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7388875091441500364, guid: 6eb6c0e321b094345b4e83c904ad2bbf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6eb6c0e321b094345b4e83c904ad2bbf, type: 3}
@@ -1510,7 +1515,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d527855bd483877489d3cf012eb21681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EVIDENCE_SPRITES: []
+  EVIDENCE_SPRITES:
+  - {fileID: 21300000, guid: aae997aa69d24694f97377420b08fe64, type: 3}
   _requiredInteractions:
   - whathappened
   - alibi
