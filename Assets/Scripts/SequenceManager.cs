@@ -56,6 +56,7 @@ public class SequenceManager : MonoBehaviour
         //3: Judgy
         //4: Sad
         //5: Nothing
+        //6: Blushing
         int anim_state = 0;
         switch (state)
         {
@@ -76,6 +77,9 @@ public class SequenceManager : MonoBehaviour
                 break;
             case "nothing":
                 anim_state = 5;
+                break;
+            case "blushing":
+                anim_state = 6;
                 break;
         }
         anim.SetInteger("state", anim_state);

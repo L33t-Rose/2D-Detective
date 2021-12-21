@@ -89,6 +89,7 @@ public class TextBoxController : MonoBehaviour
                 //3: Judgy
                 //4: Sad
                 //5: Nothing
+                //6: Blushing
                 break;
             case "_obtainEv":
                 canvas.SendMessage("obtainEvidence",com.dialogue);
