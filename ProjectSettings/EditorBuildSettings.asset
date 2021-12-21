@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sequence2.unity
     guid: 895c9615af1f19e4c8aa04f9e917574a
+  - enabled: 1
+    path: Assets/Scenes/Sequence3Pt1.unity
+    guid: b5238e03801dab9448088c58a28f1d03
+  - enabled: 1
+    path: Assets/Scenes/Sequence3Pt2.unity
+    guid: 47ce2506801f38b45b8160af8995262e
+  - enabled: 1
+    path: Assets/Scenes/Sequence3Pt3.unity
+    guid: c104ff4bf73668c49a4734b399fca723
   m_configObjects: {}

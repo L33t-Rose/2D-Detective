@@ -56,7 +56,7 @@ public class Sequence1 : MonoBehaviour
                 ("Thomas", "A new case. The chief assigned you to do it specifically."),
                 ("Joseph", "Great, another Tuesday."),
                 ("Thomas", "The murder took place 2 days ago. September 7. The victim’s name is Katie Miller. Female, 23 years old. An office worker."),
-                ("Thomas", "She was stabbed in the chest, cause of death was loss of blood."),
+                ("Thomas", "She was stabbed in the chest, cause of death was loss of blood. Estimate time of death was around 7 pm -8 pm."),
                 ("Thomas", "Here’s the autopsy report."),
                 ("_obtainEv", "0"),
                 ("_hideObtainedEnv",""),

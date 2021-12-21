@@ -151,7 +151,10 @@ public class Sequence2 : MonoBehaviour
                 ("Thomas", "Do you actually think he didn't do it?"),
                 ("Joseph", "With the cards on the table, the game is either over."),
                 ("Joseph", "Or someone is going to pull the biggest reverse card on us."),
-                ("Joseph", "That someone can very well be Jack.")
+                ("Joseph", "That someone can very well be Jack."),
+                ("Thomas", "...Wow."),
+                ("Joseph", "With that, we should go check out their office and find more clues."),
+                ("_nextScene", "Sequence3Pt1")
 
             },
             //5
