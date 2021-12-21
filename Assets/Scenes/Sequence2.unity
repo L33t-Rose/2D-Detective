@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 6561937}
   - component: {fileID: 6561938}
   m_Layer: 0
-  m_Name: Eliot
+  m_Name: Jack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,7 +179,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 1781f810289bdd8419855a537c6f2a76, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d29a96438e2fe1441aa8735d502fa5c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -198,8 +198,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6561934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: -0.53, z: 0}
-  m_LocalScale: {x: 9, y: 9, z: 1}
+  m_LocalPosition: {x: 0.1, y: 1.36, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -214,7 +214,7 @@ Animator:
   m_GameObject: {fileID: 6561934}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 683213c994fd4384aa5b920130c85d20, type: 2}
+  m_Controller: {fileID: 9100000, guid: d0d4570eaee0dc242ac70673138193fc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -666,7 +666,7 @@ GameObject:
   - component: {fileID: 479346916}
   - component: {fileID: 479346918}
   m_Layer: 0
-  m_Name: Eliot's Desk
+  m_Name: Interrogation Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -711,7 +711,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 16d880ff621e1d04789e1dad6447e16c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 335f26ff6a974f545a9f5f55a9039d07, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1144,7 +1144,7 @@ PrefabInstance:
     - target: {fileID: 5915433508075090757, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -114055.38
+      value: -134376.44
       objectReference: {fileID: 0}
     - target: {fileID: 6462220344343374096, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
         type: 3}
@@ -1390,6 +1390,26 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1686776117}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1686776119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7388875091441500371, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1686776117}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1686776120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686776119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4f0f387216574080564e5dda3ea89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EVIDENCE_SPRITES: []
+  _requiredInteractions: []
 --- !u!114 &2015337591 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7388875089897877933, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
@@ -1408,7 +1428,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1686776117}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1686776119}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b3f33b0600226b48a9fb3cbbff51ed9, type: 3}
@@ -1420,7 +1440,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1686776117}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1686776119}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca58513f7c8b82646a8da6916b3efffd, type: 3}
