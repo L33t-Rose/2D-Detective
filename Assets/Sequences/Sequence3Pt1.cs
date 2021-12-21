@@ -28,7 +28,7 @@ public class Sequence3Pt1 : MonoBehaviour
                 ("_hideCharacter",""),
                 ("","Jim & Leo Inc."),
                 ("_showBG",""),
-                ("Joseph", "Why do I feel like they have a better working environment than our princt?"),
+                ("Joseph", "Why do I feel like they have a better working environment than our precinct?"),
                 ("Thomas", "Don't say that out loud man."),
                 ("Joseph", "Hey, I think that's one of the suspects."),
                 ("","Joseph walks up to the man."),
