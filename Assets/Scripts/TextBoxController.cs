@@ -65,27 +65,22 @@ public class TextBoxController : MonoBehaviour
         switch (com.speaker)
         {
             case "_hideBG":
-                print("hiding bg");
                 autoNext = true;
                 canvas.SendMessage("hideBackground");
                 break;
             case "_showBG":
-                print("showing bg");
                 autoNext = true;
                 canvas.SendMessage("showBackground");
                 break;
             case "_hideCharacter":
-                print("hiding character");
                 autoNext = true;
                 canvas.SendMessage("hideCharacter");
                 break;
             case "_showCharacter":
-                print("hiding character");
                 autoNext = true;
                 canvas.SendMessage("showCharacter");
                 break;
             case "_setFace":
-                print("hiding character");
                 autoNext = true;
                 canvas.SendMessage("changeFace",com.dialogue);
                 //0: Normal
@@ -95,7 +90,6 @@ public class TextBoxController : MonoBehaviour
                 //4: Sad
                 break;
             case "_obtainEv":
-                print("hiding char");
                 canvas.SendMessage("obtainEvidence",com.dialogue);
                 break;
             case "_hideObtainedEnv":

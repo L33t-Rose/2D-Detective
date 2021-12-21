@@ -82,16 +82,17 @@ public class SequenceManager : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
     }
 
-    void AddToInteractions(GameObject obj)
+    public void AddToInteractions(string str)
     {
-        GameData.visited.Add(obj);
+        GameData.visited.Add(str);
+        checkForNextScene();
     }
 
     void checkForNextScene()
     {
-        if (GameData.REQUIRED_INTERACTIONS.Equals(GameData.visited))
+        if(GameData.REQUIRED_INTERACTIONS.SetEquals(GameData.visited))
         {
-
+            this.gameObject.SendMessage("showNextSceneButton");
         }
     }
 }

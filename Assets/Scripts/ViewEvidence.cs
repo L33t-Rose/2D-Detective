@@ -27,7 +27,6 @@ public class ViewEvidence : MonoBehaviour
         var test = GameData.OBTAINED_EVIDENCE;
         foreach((Sprite image, (string name, string desc)) temp in test)
         {
-            print(temp);
             var button = Instantiate(EvidenceButton, Scroll.transform,false);
             var button_image = button.GetComponentInChildren<Image>();
             button_image.sprite = temp.image;

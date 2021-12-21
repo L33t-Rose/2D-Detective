@@ -16,7 +16,6 @@ public class ButtonController : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        print("test enter");
         Cursor.SetCursor(cursor, hotSpot, cursorMode);
     }
 

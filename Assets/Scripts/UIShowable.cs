@@ -9,6 +9,7 @@ public class UIShowable : MonoBehaviour
     public GameObject TALK_UI;
     public GameObject TEXTBOX_UI;
     public GameObject EVIDENCE_LIST_UI;
+    public GameObject NEXT_SCENE_BUTTON;
 
     Vector3 HIDE_VECTOR = new Vector3(0, 1, 1);
     Vector3 SHOW_VECTOR = new Vector3(1, 1, 1);
@@ -16,7 +17,7 @@ public class UIShowable : MonoBehaviour
     void Start()
     {
         purgeAll();
-        print(GameData.Sequence[0].Length);
+        hide(NEXT_SCENE_BUTTON);
         if (GameData.Sequence[0].Length != 0)
         {
             showTextbox(0);
@@ -84,6 +85,17 @@ public class UIShowable : MonoBehaviour
     {
         purgeAll();
         show(INVESTIGATION_UI);
+    }
+
+    public void showNextSceneButton()
+    {
+        print("called");
+        print("called");
+        print("called");
+        print("called");
+        print("called");
+        print("called");
+        show(NEXT_SCENE_BUTTON);
     }
 
     void hide(GameObject ui_elem)

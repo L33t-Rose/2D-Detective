@@ -35,7 +35,6 @@ public class EvidenceController : MonoBehaviour
 
     void show()
     {
-        print("showing");
         var pos = transform.position;
         Debug.Log("test "+pos);
         //Why does this work? Who knows?
