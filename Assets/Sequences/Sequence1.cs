@@ -12,7 +12,8 @@ public class Sequence1 : MonoBehaviour
     {
         GameData.EVIDENCE_DATA = new(string name, string desc)[]
         {
-            ("Autopsy Report","Name: Katie Miller\nCause Of Death:\nKnife wound to the chest, loss of blood.")
+            ("Autopsy Report","Name: Katie Miller\nCause Of Death:\nKnife wound to the chest, loss of blood."),
+            ("Murder Weapon", "Belongs to Jack Willow. Fingerprints test indicates a perfect match with Jack Willow. DNA test was done, the blood belonged to the victim, Katie Miller.")
         };
 
         GameData.EVIDENCE_SPRITES = EVIDENCE_SPRITES;
