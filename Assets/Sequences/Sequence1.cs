@@ -77,7 +77,7 @@ public class Sequence1 : MonoBehaviour
                 ("Joseph", "(Yeah no, either this is really easy or he is one of the generic obvious suspect)"),
                 ("Joseph", "Alright, I guess we should do more investigation before Jack goes to court."),
                 ("Thomas", "Already have an idea aye?"),
-                ("_nextScene", "Sequence5")
+                ("_nextScene", "Sequence2")
             }
         };
 
