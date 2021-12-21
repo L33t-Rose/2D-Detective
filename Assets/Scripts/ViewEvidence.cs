@@ -28,8 +28,9 @@ public class ViewEvidence : MonoBehaviour
         foreach((Sprite image, (string name, string desc)) temp in test)
         {
             var button = Instantiate(EvidenceButton, Scroll.transform,false);
-            var button_image = button.GetComponentInChildren<Image>();
-            button_image.sprite = temp.image;
+            var evidence_image = button.transform.GetChild(0);
+            var evidence_image_component = evidence_image.GetComponentInChildren<Image>();
+            evidence_image_component.sprite = temp.image;
         }
     }
 }

@@ -203,7 +203,7 @@ RectTransform:
   m_GameObject: {fileID: 1511681472138735685}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3784552406805230670}
   - {fileID: 1916497507778470523}
@@ -426,12 +426,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7388875091441500362}
-        m_MethodName: showMain
-        m_Mode: 1
+        m_MethodName: showTextbox
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -593,7 +593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1023.83905, y: 9}
+  m_AnchoredPosition: {x: -255.99994, y: 9}
   m_SizeDelta: {x: 0, y: 106.18814}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &2673463056151998818
@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 7652966338528723354}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.4999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

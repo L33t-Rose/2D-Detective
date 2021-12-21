@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Sequence2 : MonoBehaviour
 {
     public Sprite[] EVIDENCE_SPRITES;
+
+    //This is where we 
     public string[] _requiredInteractions;
 
     // Start is called before the first frame update
