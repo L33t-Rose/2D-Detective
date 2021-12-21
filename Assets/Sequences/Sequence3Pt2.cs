@@ -67,7 +67,7 @@ public class Sequence3Pt2 : MonoBehaviour
                 ("", "Thomas folds the letter in disgust."),
                 ("Joseph", "Maybe I shouldn't read that letter."),
                 ("_goTo","investigate")
-                //obtained evidence
+                //obtained evidence 
             },
             //4 Laptop
             new (string speaker, string dialogue)[]

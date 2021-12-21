@@ -81,7 +81,76 @@ public class Sequence3Pt5 : MonoBehaviour
             { 
                 ("Joseph", "What is your relation with Katie?"),
                 ("Eliot", "Um, she is my coworker."),
-                ("Joseph", "")
+                ("Joseph", "We have evidence suggesting you have other connections to Katie."),
+                ("_setFace","blushing"),
+                ("Eliot", "What do you mean?"),
+                ("Joseph", "I suggest you be honest and tell us about it."),
+                ("Eliot", "OK! OK!"),
+                ("Eliot", "I like Katie."),
+                ("Eliot", "She is the most beautiful woman I have seen."),
+                ("Eliot", "I want to be with her but I never got the courage to say it."),
+                ("Joseph", "(I didn't know this turned into a shojo anime.)"),
+                ("Joseph", "(Wait, SO I AM AN ANIME CHARACTER!)"),
+                ("Eliot", "But I finally decided to express my feelings."),
+                ("Eliot", "I wrote a letter with everything I wanted to tell Katie."),
+                ("Eliot", "And I wanted to give it to her on the 7th, at the end of our meeting."),
+                ("Eliot", "But before I could talk to her and give it to her, she left."),
+                ("_setFace", "normal"),
+                ("Eliot", "It looked like she was in a rush."),
+                ("Eliot", "So I ended up not delivering her the letter."),
+                ("Eliot", "The next day, I didn't find her at work. And then I heard she was killed."),
+                ("_setFace", "sad"),
+                ("Eliot", "I was devasted to know my feelings would never be expressed."),
+                ("Eliot", "I can only live in regret."),
+                ("Joseph", "I am sorry to hear that."),
+                ("Eliot", "Please, officer."),
+                ("Eliot", "I know that Jack killed her."),
+                ("Eliot", "He hated Katie and he must've killed her when he thought no one will see him. And he happened to have a knife on him."),
+                ("Eliot", "It is clear that Jack is the killer. Please put him in jail for life."),
+                ("Eliot", "For Katie."),
+                ("Joseph", "I will do my best to find Katie's killer and bring them to justice.")
+            },
+            //4 flower
+            new (string speaker, string dialogue)[]
+            {
+                ("Joseph", "A picture of a flower."),
+                ("Joseph", "A flower with a familiar face."),
+                ("Joseph", "Looks like they are missing 2 petals however."),
+                ("Joseph", "Maybe I should have a picture of a flower at my desk."),
+                ("", "That's a wonderful idea."),
+                ("Joseph", "Who said that?"),
+                ("_goTo","investigate")
+            },
+            //5 coffee
+            new (string speaker, string dialogue)[]
+            {
+                ("Joseph", "That's a cup of PlanetPennies."),
+                ("Josepj", "Typical coffee for a office worker."),
+                ("_goTo","investigate")
+            },
+            //6 Proceeed
+            new (string speaker, string dialogue)[]
+            {
+                ("_setFace", "normal"),
+                ("Joseph", "Thank you, Eliot."),
+                ("Joseph", "That will be all the questions I have, thank you for cooperating."),
+                ("Eliot", "No problem sir. Please have Jack placed in jail, a death penalty even."),
+                ("Joseph", "I understand your frustration."),
+                ("Joseph", "I will do my best."),
+                ("_hideCharacter", ""),
+                ("", "Joseph left."),
+                ("Thomas", "Hey Joseph, I got a copy of the log."),
+                //obtained evidence.
+                ("Joseph", "Thank you so much."),
+                ("Thomas", "So what did you learn?"),
+                ("Joseph", "Eliot didn't do it."),
+                ("Thomas", "Are you sure?"),
+                ("Joseph", "He has a watertight alibi. He didn't deliver the letter and he is sad that he can't anymore."),
+                ("Thomas", "Wow, I feel bad for the guy."),
+                ("Thomas", "Where to now?"),
+                ("Joseph", "We have to pay our friend another visit."), 
+                ("_nextScene", "Sequence3Pt6")
+
             }
 
         };
