@@ -98,7 +98,7 @@ public class Sequence5 : MonoBehaviour
             //5 Third Evidence Incorrect
             new (string speaker, string dialogue)[]
             {
-                ("Andreas", "Detective, I have piano practice to attend to."),
+                ("Andreas", "Detective, I have piano rehearsal to attend to."),
                 ("Andreas", "Don't waste my time."),
                 ("Joseph", "It was only a fluke. This is what you used to kill her."),
                 ("_goTo","evidence")

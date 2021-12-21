@@ -13,7 +13,7 @@ public class Sequence3Pt4 : MonoBehaviour
     {
         GameData.EVIDENCE_DATA = new (string name, string desc)[]
         {
-            ("Autopsy Report","Name: Katie Miller\nCause Of Death:\nKnife wound to the chest, loss of blood.")
+            ("Photo","A picture of Jack found behind Andreas's desk.")
         };
 
         GameData.EVIDENCE_SPRITES = EVIDENCE_SPRITES;
@@ -75,7 +75,8 @@ public class Sequence3Pt4 : MonoBehaviour
                 ("Joseph", "What?"),
                 ("Thomas", "There's nothing written on the back nor the front."),
                 ("Thomas", "It is just a normal picture of Jack."),
-                //evidence obtained.
+                ("_obtainEv", "0"),
+                ("_hideObtainedEnv",""),
                 ("Joseph", "Weird, why is that behind her desk? Why is she hiding it?"),
                 ("Thomas", "Office romance?"),
                 ("Joseph", "I need time to digest this."),

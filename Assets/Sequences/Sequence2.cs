@@ -15,7 +15,7 @@ public class Sequence2 : MonoBehaviour
     {
         GameData.EVIDENCE_DATA = new (string name, string desc)[]
         {
-            ("Autopsy Report","Name: Katie Miller\nCause Of Death:Knife wound to the chest, loss of blood.")
+            
         };
         GameData.EVIDENCE_SPRITES = EVIDENCE_SPRITES;
         GameData.REQUIRED_INTERACTIONS = new HashSet<string>(_requiredInteractions);

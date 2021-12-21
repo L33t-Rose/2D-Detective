@@ -13,7 +13,7 @@ public class Sequence3Pt1 : MonoBehaviour
     {
         GameData.EVIDENCE_DATA = new (string name, string desc)[]
         {
-            ("Autopsy Report","Name: Katie Miller\nCause Of Death:\nKnife wound to the chest, loss of blood.")
+            ("Orange Letter","A letter written by Katie. Contains Jack's misdeamnors and request of Jack's removal from the office.")
         };
 
         GameData.EVIDENCE_SPRITES = EVIDENCE_SPRITES;
@@ -69,6 +69,8 @@ public class Sequence3Pt1 : MonoBehaviour
                    ("Thomas", "The letter has a list of Jack's terrible behavior and misconducts. Katie wants Jack to be fired."),
                    ("Joseph", "Ah."),
                    ("Thomas", "I suppose this is an important piece of evidence."),
+                   ("_obtainEv", "0"),
+                   ("_hideObtainedEnv",""),
                    ("_goTo","investigate")
                    //obtain evidence Katie's Letter.
 

@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 6561937}
   - component: {fileID: 6561938}
   m_Layer: 0
-  m_Name: Jack
+  m_Name: Andreas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,7 +179,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: d29a96438e2fe1441aa8735d502fa5c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da7fe876451fba34388994d4d42df08a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -198,8 +198,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6561934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 1.36, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: -0.16, y: -0.47, z: 0}
+  m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -214,7 +214,7 @@ Animator:
   m_GameObject: {fileID: 6561934}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d0d4570eaee0dc242ac70673138193fc, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -666,7 +666,7 @@ GameObject:
   - component: {fileID: 479346916}
   - component: {fileID: 479346918}
   m_Layer: 0
-  m_Name: Interrogation Room
+  m_Name: Andreas's Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -711,7 +711,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 335f26ff6a974f545a9f5f55a9039d07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 560768d9de190f84bb619eb65605f3a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1174,7 +1174,7 @@ PrefabInstance:
     - target: {fileID: 5915433508075090757, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -202877.48
+      value: -219898.31
       objectReference: {fileID: 0}
     - target: {fileID: 6060818379183524886, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
         type: 3}
@@ -1286,11 +1286,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alibi
       objectReference: {fileID: 0}
+    - target: {fileID: 7388875091160069177, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 191.43631
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388875091160069177, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.3
+      objectReference: {fileID: 0}
     - target: {fileID: 7388875091302736692, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
         type: 3}
       propertyPath: EVIDENCE_IMAGE
       value: 
       objectReference: {fileID: 2015337591}
+    - target: {fileID: 7388875091302736695, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7388875091441500365, guid: 6eb6c0e321b094345b4e83c904ad2bbf,
         type: 3}
       propertyPath: anim
