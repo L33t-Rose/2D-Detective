@@ -21,4 +21,23 @@ public class GameData : MonoBehaviour
     public static HashSet<string> REQUIRED_INTERACTIONS;
     public static HashSet<string> visited = new HashSet<string>();
 
+    //For the final Sequence
+    public static int FINAL_SCENE_INDEX = 0;
+    public static string evidenceAboutToPresented = "";
+    public static string[] correctAnswers = new string[]
+    {
+        "Orange Letter",
+        "Photo",
+        "Murder Weapon",
+        "Log",
+        "Murder Weapon"
+    };
+    public static (int correct, int incorrect)[] options = new(int correct, int incorrect)[] { 
+        (2, 1), //First
+        (4, 3), //Second
+        (6, 5), //Third
+        (8, 7), //Fourth
+        (10,9)  //Fifth
+    };
+
 }

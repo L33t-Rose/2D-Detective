@@ -45,6 +45,7 @@ public class Sequence5 : MonoBehaviour
                 ("Andreas", "Aren't you a detective?"),
                 ("Joseph", "Ah, sorry. I just pulled out the wrong piece of evidence."),
                 ("Joseph", "Here is the one."),
+                ("_goTo","evidence")
                 //present evidence
             },
             //2 First Evidence Correct
@@ -60,6 +61,7 @@ public class Sequence5 : MonoBehaviour
                 ("Joseph", "You like Jack."),
                 ("Joseph", "In fact, you love him deeply and you are obsessed."),
                 ("Joseph", "This proves exactly that."),
+                ("_goTo","evidence")
                 //present evidence
                 //Need to present the photo
             },
@@ -69,7 +71,8 @@ public class Sequence5 : MonoBehaviour
                 ("Andreas", "HAHAHA!"),
                 ("Andreas", "This is what made you think I love Jack?"),
                 ("Andreas", "Detective, you should be a stand-up comedian!"),
-                ("Joseph", "I meant, this is the evidence!")
+                ("Joseph", "I meant, this is the evidence!"),
+                ("_goTo","evidence")
             },
             //4 Second Evidence Correct
             new (string speaker, string dialogue)[]
@@ -88,6 +91,7 @@ public class Sequence5 : MonoBehaviour
                 ("Andreas", "I had no ways to kill her."),
                 ("Joseph", "How naive."),
                 ("Joseph", "You used this to kill her."),
+                ("_goTo","evidence")
                 //present evidence
                 //Need to present the murder weapon
             },
@@ -96,7 +100,8 @@ public class Sequence5 : MonoBehaviour
             {
                 ("Andreas", "Detective, I have piano practice to attend to."),
                 ("Andreas", "Don't waste my time."),
-                ("Joseph", "It was only a fluke. This is what you used to kill her.")
+                ("Joseph", "It was only a fluke. This is what you used to kill her."),
+                ("_goTo","evidence")
             },
 
             //6 Third Evidence Correct
@@ -110,6 +115,7 @@ public class Sequence5 : MonoBehaviour
                 ("Andreas", "Jack brough it with him when he left office."),
                 ("Andreas", "Plus, I left before Jack. There is no way I could have my hands on that box."),
                 ("Joseph", "You say you left before Jack? This proves otherwise."),
+                ("_goTo","evidence")
                 //present evidence
                 //Need to present the log
             },
@@ -119,7 +125,8 @@ public class Sequence5 : MonoBehaviour
                 ("Andreas", "What does this prove?"),
                 ("Andreas", "Do you have bad eye sight or something?"),
                 ("Joseph", "(Ouch.)"),
-                ("Joseph", "This is the one that proves you wrong!")
+                ("Joseph", "This is the one that proves you wrong!"),
+                ("_goTo","evidence")
             },
             //8 Fourth Evidence Correct
             new (string speaker, string dialogue)[]
@@ -135,6 +142,7 @@ public class Sequence5 : MonoBehaviour
                 ("Joseph", "(This is it, the last step to take her in.)"),
                 ("Joseph", "If Katie did steal the knife, she must've left her fingerprints on it."),
                 ("Joseph", "But this shows otherwise."),
+                ("_goTo","evidence")
                 //present
                 //Need to present Knife
             },
@@ -144,7 +152,8 @@ public class Sequence5 : MonoBehaviour
                 ("Andreas", "Please."),
                 ("Andreas", "Speak to me when you have collected your thoughts."),
                 ("Andreas", "It's a shame to know that the police force has a detective like you."),
-                ("Joseph", "I will show you your end!")
+                ("Joseph", "I will show you your end!"),
+                ("_goTo","evidence")
             },
             //10 Fifth Evidence Correct
             new (string speaker, string dialogue)[]

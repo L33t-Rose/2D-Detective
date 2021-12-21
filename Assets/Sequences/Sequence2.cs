@@ -18,10 +18,7 @@ public class Sequence2 : MonoBehaviour
             ("Autopsy Report","Name: Katie Miller\nCause Of Death:Knife wound to the chest, loss of blood.")
         };
         GameData.EVIDENCE_SPRITES = EVIDENCE_SPRITES;
-        Debug.Log("list of evidence sprites"+EVIDENCE_SPRITES.Length);
         GameData.REQUIRED_INTERACTIONS = new HashSet<string>(_requiredInteractions);
-        Debug.Log("required interaction list " + _requiredInteractions.Length);
-        Debug.Log(GameData.REQUIRED_INTERACTIONS.Count);
         GameData.Sequence = new (string speaker, string dialogue)[][]
         {
             //0

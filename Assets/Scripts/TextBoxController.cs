@@ -129,6 +129,8 @@ public class TextBoxController : MonoBehaviour
                 canvas.SendMessage("showMain");
             else if (goTo.Equals("investigate"))
                 canvas.SendMessage("showInvestigate");
+            else if (goTo.Equals("evidence"))
+                canvas.SendMessage("showEvidence");
         }
     }
 

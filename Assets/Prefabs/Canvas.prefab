@@ -3157,6 +3157,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3989679044411467495, guid: 84f92f4b277b51b4f896811cd3db1056,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5325962348274761292, guid: 84f92f4b277b51b4f896811cd3db1056,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -3165,7 +3170,7 @@ PrefabInstance:
     - target: {fileID: 5325962348274761292, guid: 84f92f4b277b51b4f896811cd3db1056,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -511.05014
+      value: -4354.1597
       objectReference: {fileID: 0}
     - target: {fileID: 5756185069721157919, guid: 84f92f4b277b51b4f896811cd3db1056,
         type: 3}
@@ -3232,6 +3237,11 @@ PrefabInstance:
       propertyPath: m_ChildControlHeight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7316942873820282773, guid: 84f92f4b277b51b4f896811cd3db1056,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 7388875091441500371}
     - target: {fileID: 7316942873820282773, guid: 84f92f4b277b51b4f896811cd3db1056,
         type: 3}
       propertyPath: EvidenceButton
